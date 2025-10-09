@@ -18,11 +18,11 @@ public class Driver extends User implements Serializable {
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private List<Ride> rides=new Vector<Ride>();
-
+/*
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST) 
 	private List<Kotxea> kotxeak=new Vector<Kotxea>();		
-
+*/
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)  
 	private List<Erreklamazioa> JasotakoErreklamazioak=new Vector<Erreklamazioa>();		// GEHITU
@@ -74,7 +74,7 @@ public class Driver extends User implements Serializable {
 	public void setRides(List<Ride> rides) {		
 		this.rides = rides;
 	}
-
+/*
 	public List<Kotxea> getKotxeak() { 	
 		return kotxeak;
 	}
@@ -82,7 +82,7 @@ public class Driver extends User implements Serializable {
 	public void setKotxeak(List<Kotxea> kotxeak) { 
 		this.kotxeak = kotxeak;
 	}
-
+*/
 	public String toString(){
 		return super.getEmail()+";"+super.getIzena()+rides;
 	}
@@ -146,13 +146,13 @@ public class Driver extends User implements Serializable {
 			return r;
 		} else return null;
 	}
-
+/*
 	// ZUZENDU
 	public Kotxea addKotxe(String matrikula, int eserleku, String marka) {
 		Kotxea k = new Kotxea(matrikula, eserleku, marka, this);
 		kotxeak.add(k);
 		return k;
-	}
+	}*/
 
 	public List<Ride> getBidaiakMartxan() {		
 		List<Ride> ride = new Vector<Ride>();

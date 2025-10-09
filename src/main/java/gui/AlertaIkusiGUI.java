@@ -15,7 +15,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
 import businessLogic.BLFacade;
-import domain.Alerta;
+//import domain.Alerta;
 import domain.Bidaiaria;
 
 
@@ -55,7 +55,7 @@ public class AlertaIkusiGUI extends JFrame {
 		tableBalorazioak.setForeground(Color.BLACK);
 		tableBalorazioak.setBackground(Color.WHITE);
 
-		loadAlertak(b);
+		//loadAlertak(b);
 
 		btnAtzera = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Back"));
 		btnAtzera.setBounds(214, 267, 146, 31);
@@ -74,7 +74,7 @@ public class AlertaIkusiGUI extends JFrame {
 
 	}
 
-
+/*
 	private void loadAlertak(Bidaiaria b) {
 		BLFacade facade = MainGUI.getBusinessLogic();
 		List<Alerta> alertak = facade.alertaIkusi(b);
@@ -105,6 +105,6 @@ public class AlertaIkusiGUI extends JFrame {
 			tableBalorazioak.setRowSelectionInterval(0, 0);
 		}
 	}
-
+*/
 
 }

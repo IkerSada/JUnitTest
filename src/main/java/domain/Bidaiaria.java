@@ -25,11 +25,11 @@ public class Bidaiaria extends User implements Serializable {
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private List<Erreserba> erreserbak=new Vector<Erreserba>();
-
+/*
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST) 
 	private List<Alerta> alertak=new Vector<Alerta>();		// GEHITU
-
+*/
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST) 
 	private List<Erreklamazioa> bidalitakoErreklamazioak =new Vector<Erreklamazioa>();		// GEHITU
@@ -103,7 +103,7 @@ public class Bidaiaria extends User implements Serializable {
 		}
 		return erreserba;
 	} 
-
+/*
 	// GEHITU
 	public List<Alerta> getAlertak() {
 		return alertak;
@@ -114,7 +114,7 @@ public class Bidaiaria extends User implements Serializable {
 		this.alertak = alertak;
 	}
 
-	// GEHITU
+	// GEHITU*/
 	public List<Erreklamazioa> getBidalitakoErreklamazioak() {
 		return bidalitakoErreklamazioak;
 	}
@@ -123,7 +123,7 @@ public class Bidaiaria extends User implements Serializable {
 	public void setBidalitakoErreklamazioak(List<Erreklamazioa> bidalitakoErreklamazioak) {
 		this.bidalitakoErreklamazioak = bidalitakoErreklamazioak;
 	}
-
+/*
 	// GEHITU
 	public void addAlerta(String nondik, String nora, Date data, Bidaiaria b) throws AlertaAlreadyExistException { 
 		for(Alerta a: alertak) {
@@ -136,7 +136,7 @@ public class Bidaiaria extends User implements Serializable {
 		}
 		Alerta alerta = new Alerta(nondik,nora,data,b);
 		alertak.add(alerta);
-	}
+	}*/
 	
 	// GEHITU
 	private boolean egunBerdinakDira(Date d1, Date d2) {

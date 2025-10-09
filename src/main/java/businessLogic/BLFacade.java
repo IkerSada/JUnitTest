@@ -7,13 +7,13 @@ import java.util.List;
 import domain.Ride;
 import domain.User;
 import domain.Admin;
-import domain.Alerta;
-import domain.Balorazioa;
+//import domain.Alerta;
+//import domain.Balorazioa;
 import domain.Bidaiaria;
 import domain.Driver;
 import domain.Erreklamazioa;
 import domain.Erreserba;
-import domain.Kotxea;
+//import domain.Kotxea;
 import domain.Mezua;
 import domain.Mugimendua;
 import exceptions.RideMustBeLaterThanTodayException;
@@ -113,13 +113,13 @@ public interface BLFacade  {
 	
 	@WebMethod public void erreserbaBaieztatu(int erreserbaZenbaki);	
 	
-	@WebMethod public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException;//ZUZENDU	
+	//@WebMethod public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException;//ZUZENDU	
 	
 	@WebMethod public int getnPlaces(String matrikula);		
 	
 	@WebMethod public List<Erreserba> getBidaiariarenErreserbak(Bidaiaria b);		
 	
-	@WebMethod public List<Kotxea> kotxeakEskuratu(Driver d);		
+	//@WebMethod public List<Kotxea> kotxeakEskuratu(Driver d);		
 	
 	// @WebMethod public boolean kotxeaExistitu(String matrikula);		KENDU
 	
@@ -129,7 +129,7 @@ public interface BLFacade  {
 	
 	@WebMethod public void bidaiKantzelatu(Driver gidari,int bidaiZenbaki);  
 	
-	@WebMethod public List<Balorazioa> balorazioaErakutsi(User u); 		// GEHITU
+	//@WebMethod public List<Balorazioa> balorazioaErakutsi(User u); 		// GEHITU
 	
 	@WebMethod public void erabiltzaileaEzabatu(User u); 	// GEHITU
 	
@@ -147,7 +147,7 @@ public interface BLFacade  {
 	
 	@WebMethod public List<Erreserba> getBaloratuGabekoErreserbak(Bidaiaria b);		// GEHITU
 	
-	@WebMethod public List<Alerta> alertaIkusi(Bidaiaria b);	 //GEHITU
+	//	@WebMethod public List<Alerta> alertaIkusi(Bidaiaria b);	 //GEHITU
 	
 	@WebMethod public void alertaSortu(String nondik, String nora, Date data, Bidaiaria b) throws AlertaAlreadyExistException;	// GEHITU
 	

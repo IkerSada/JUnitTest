@@ -86,7 +86,7 @@ public class KotxeaGehituGUI extends JFrame {
 				a.setVisible(true);
             }
         });
-		
+		/*
 		JButton btnGehitu = new JButton(ResourceBundle.getBundle("Etiquetas").getString("KotxeaGehituGUI.Gehitu"));
 		btnGehitu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -121,6 +121,6 @@ public class KotxeaGehituGUI extends JFrame {
 		});
 		btnGehitu.setBounds(239, 191, 130, 23);
 		contentPane.add(btnGehitu);
-
+*/
 	}
 }

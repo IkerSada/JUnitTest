@@ -16,7 +16,7 @@ import java.beans.PropertyChangeListener;
 import businessLogic.BLFacade;
 import configuration.UtilDate;
 import domain.Driver;
-import domain.Kotxea;
+//import domain.Kotxea;
 import domain.Ride;
 import exceptions.RideAlreadyExistException;
 import exceptions.RideMustBeLaterThanTodayException;
@@ -146,7 +146,7 @@ public class CreateRideGUI extends JFrame {
 				jTextFieldSeats.setText(String.valueOf(facade.getnPlaces(CarsBox.getSelectedItem().toString())));	
 			}
 		});
-	
+	/*
 		comboBoxCars.setBounds(125, 149, 130, 22);
 		getContentPane().add(comboBoxCars);
 		comboBoxCars.setModel(CarsBox);
@@ -155,7 +155,7 @@ public class CreateRideGUI extends JFrame {
 			CarsBox.addElement(k.getMatrikula());
 		}
 		
-		
+		*/
 		 //Code for JCalendar
 		this.jCalendar.addPropertyChangeListener(new PropertyChangeListener() {
 			public void propertyChange(PropertyChangeEvent propertychangeevent) {

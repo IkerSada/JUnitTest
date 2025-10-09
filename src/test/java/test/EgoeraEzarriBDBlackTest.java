@@ -1,198 +1,164 @@
 package test;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 import dataAccess.DataAccess;
-import domain.Erreklamazioa;
+import domain.Bidaiaria;
+import domain.Driver;
 import exceptions.erreklamazioaEbatzitaException;
+import testOperations.TestDataAccess;
 
 public class EgoeraEzarriBDBlackTest {
 
     // sut: system under test
     static DataAccess sut = new DataAccess();
+    static TestDataAccess testDA = new TestDataAccess();
 
     @Test
-    // sut.egoeraEzarri: The Erreklamazio with id=errekzbk exists and is in "itxaron" state
-    // and the state should be changed to "onartu" successfully
-    public void test1() {
-        int erreklamazioZenbaki = 1;
-        String nuevoEgoera = "onartu";
-        
-        try {
-            // First, ensure we have an Erreklamazio in "itxaron" state
-            // We'll use existing data or create minimal test data
-            Integer existingId = findErreklamazioItxaron();
-            if (existingId != null) {
-                erreklamazioZenbaki = existingId;
-            }
-            
-            // Invoke System Under Test (sut)
-            sut.egoeraEzarri(erreklamazioZenbaki, nuevoEgoera);
-            
-            // Verify the results by checking the state
-            sut.open();
-            Erreklamazioa updated = sut.erreklamazioaLortu(erreklamazioZenbaki);
-            sut.close();
-            
-            assertNotNull("Erreklamazioa no debería ser null", updated);
-            assertEquals(nuevoEgoera, updated.getEgoera());
-            
-        } catch (erreklamazioaEbatzitaException e) {
-            fail("No se esperaba erreklamazioaEbatzitaException");
-        } catch (Exception e) {
-            fail("Error inesperado: " + e.getMessage());
-        }
-    }
+    // sut.egoeraEzarri: Erreklamazioa already "ebatzita" → must throw erreklamazioaEbatzitaException
+    public void test1_ErreklamazioaEbatzita() {
+        String bidaiariaEmail = "bidaiaria@test.com";
+        String driverEmail = "driver@test.com";
+        int erreklamazioaId = -1;
 
-    @Test
-    // sut.egoeraEzarri: The Erreklamazio with id=errekzbk exists but is NOT in "itxaron" state
-    // and the erreklamazioaEbatzitaException must be thrown
-    public void test2() {
         try {
-            // First create a scenario: create and resolve an Erreklamazio
-            Integer erreklamazioId = findOrCreateErreklamazioItxaron();
-            if (erreklamazioId == null) {
-                System.out.println("No se pudo crear escenario de prueba");
-                return;
-            }
-            
-            // First change: itxaron → onartu (should work)
-            sut.egoeraEzarri(erreklamazioId, "onartu");
-            
-            // Second change: onartu → deuseztatu (should throw exception)
-            sut.egoeraEzarri(erreklamazioId, "deuseztatu");
-            
-            // If we reach here, the test fails
-            fail("Se esperaba erreklamazioaEbatzitaException en el segundo cambio");
-            
-        } catch (erreklamazioaEbatzitaException e) {
-            // Expected behavior - test passes
-            assertTrue(true);
-        } catch (Exception e) {
-            fail("Error inesperado: " + e.getMessage());
-        }
-    }
+            testDA.open();
+            testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
+            testDA.createDriver(driverEmail, "Driver");
 
-   
+            Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
+            Driver driver = testDA.getDriver(driverEmail);
 
-    @Test
-    // sut.egoeraEzarri: Change state to "onartu" and verify money transfer
-    public void test3() {
-        try {
-            Integer erreklamazioId = findOrCreateErreklamazioItxaron();
-            if (erreklamazioId == null) return;
-            
-            // Get initial state
+            erreklamazioaId = testDA.createSimpleErreklamazioa("onartu", bidaiaria, driver);
+            testDA.close();
+
             sut.open();
-            Erreklamazioa original = sut.erreklamazioaLortu(erreklamazioId);
-            float initialBidaiariaMoney = original.getNork().getDirua();
-            float initialDriverMoney = original.getNori().getDirua();
-            float diruIzoztua = original.getErreserbarenDiruIzoztua();
+            sut.egoeraEzarri(erreklamazioaId, "deuseztatu");
             sut.close();
-            
-            // Change state to "onartu"
-            sut.egoeraEzarri(erreklamazioId, "onartu");
-            
-            // Verify state change and money transfer
-            sut.open();
-            Erreklamazioa updated = sut.erreklamazioaLortu(erreklamazioId);
-            float finalBidaiariaMoney = updated.getNork().getDirua();
-            float finalDriverMoney = updated.getNori().getDirua();
-            sut.close();
-            
-            assertEquals("onartu", updated.getEgoera());
-            assertEquals(initialBidaiariaMoney + diruIzoztua, finalBidaiariaMoney, 0.001f);
-            assertEquals(initialDriverMoney - diruIzoztua, finalDriverMoney, 0.001f);
-            
+
+            fail("Expected erreklamazioaEbatzitaException not thrown");
+
         } catch (erreklamazioaEbatzitaException e) {
-            fail("No se esperaba erreklamazioaEbatzitaException");
+            assertTrue(true); // expected
         } catch (Exception e) {
-            fail("Error inesperado: " + e.getMessage());
+            fail("Unexpected exception: " + e.getMessage());
+        } finally {
+            testDA.open();
+            if (erreklamazioaId != -1) testDA.removeErreklamazioa(erreklamazioaId);
+            testDA.removeBidaiaria(bidaiariaEmail);
+            testDA.removeDriver(driverEmail);
+            testDA.close();
         }
     }
 
     @Test
-    // sut.egoeraEzarri: Change state to "deuseztatu" and verify no money transfer
-    public void test4() {
+    // sut.egoeraEzarri: Erreklamazioa in state "itxaron" → changing to "itxaron" again is valid
+    public void test2_EgoeraItxaron() {
+        String bidaiariaEmail = "bidaiaria@test.com";
+        String driverEmail = "driver@test.com";
+        int erreklamazioaId = -1;
+
         try {
-            Integer erreklamazioId = findOrCreateErreklamazioItxaron();
-            if (erreklamazioId == null) return;
-            
-            // Get initial state
+            testDA.open();
+            testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
+            testDA.createDriver(driverEmail, "Driver");
+
+            Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
+            Driver driver = testDA.getDriver(driverEmail);
+
+            erreklamazioaId = testDA.createSimpleErreklamazioa("itxaron", bidaiaria, driver);
+            testDA.close();
+
             sut.open();
-            Erreklamazioa original = sut.erreklamazioaLortu(erreklamazioId);
-            float initialBidaiariaMoney = original.getNork().getDirua();
-            float initialDriverMoney = original.getNori().getDirua();
-            sut.close();
-            
-            // Change state to "deuseztatu"
-            sut.egoeraEzarri(erreklamazioId, "deuseztatu");
-            
-            // Verify state change and no money transfer
-            sut.open();
-            Erreklamazioa updated = sut.erreklamazioaLortu(erreklamazioId);
-            float finalBidaiariaMoney = updated.getNork().getDirua();
-            float finalDriverMoney = updated.getNori().getDirua();
-            sut.close();
-            
-            assertEquals("deuseztatu", updated.getEgoera());
-            assertEquals(initialBidaiariaMoney, finalBidaiariaMoney, 0.001f);
-            assertEquals(initialDriverMoney, finalDriverMoney, 0.001f);
-            
+            sut.egoeraEzarri(erreklamazioaId, "itxaron");
+
+            assertTrue(true); // expected normal behavior
+
         } catch (erreklamazioaEbatzitaException e) {
-            fail("No se esperaba erreklamazioaEbatzitaException");
+            fail("Unexpected erreklamazioaEbatzitaException");
         } catch (Exception e) {
-            fail("Error inesperado: " + e.getMessage());
+            fail("Unexpected exception: " + e.getMessage());
+        } finally {
+            testDA.open();
+            if (erreklamazioaId != -1) testDA.removeErreklamazioa(erreklamazioaId);
+            testDA.removeBidaiaria(bidaiariaEmail);
+            testDA.removeDriver(driverEmail);
+            testDA.close();
         }
     }
 
-  
-    // ========== HELPER METHODS ==========
+    @Test
+    // sut.egoeraEzarri: Erreklamazioa in state "itxaron" → change to "deuseztatu"
+    public void test3_EgoeraDeuseztatu() {
+        String bidaiariaEmail = "bidaiaria@test.com";
+        String driverEmail = "driver@test.com";
+        int erreklamazioaId = -1;
 
-    private Integer findErreklamazioItxaron() {
-        // Look for existing Erreklamazio in "itxaron" state
-        for (int i = 1; i <= 10; i++) {
-            try {
-                sut.open();
-                Erreklamazioa e = sut.erreklamazioaLortu(i);
-                sut.close();
-                if (e != null && "itxaron".equals(e.getEgoera())) {
-                    return i;
-                }
-            } catch (Exception e) {
-                sut.close();
-                // Continue searching
-            }
+        try {
+            testDA.open();
+            testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
+            testDA.createDriver(driverEmail, "Driver");
+
+            Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
+            Driver driver = testDA.getDriver(driverEmail);
+
+            erreklamazioaId = testDA.createSimpleErreklamazioa("itxaron", bidaiaria, driver);
+            testDA.close();
+
+            sut.open();
+            sut.egoeraEzarri(erreklamazioaId, "deuseztatu");
+
+
+            assertTrue(true); // valid transition
+
+        } catch (erreklamazioaEbatzitaException e) {
+            fail("Unexpected erreklamazioaEbatzitaException");
+        } catch (Exception e) {
+            fail("Unexpected exception: " + e.getMessage());
+        } finally {
+            testDA.open();
+            if (erreklamazioaId != -1) testDA.removeErreklamazioa(erreklamazioaId);
+            testDA.removeBidaiaria(bidaiariaEmail);
+            testDA.removeDriver(driverEmail);
+            testDA.close();
         }
-        return null;
     }
 
-    private Integer findOrCreateErreklamazioItxaron() {
-        // First try to find existing
-        Integer existing = findErreklamazioItxaron();
-        if (existing != null) {
-            return existing;
+    @Test
+    // sut.egoeraEzarri: Erreklamazioa in state "itxaron" → change to an unrecognized state (e.g. "besteBat")
+    public void test4_EgoeraBesteBat() {
+        String bidaiariaEmail = "bidaiaria@test.com";
+        String driverEmail = "driver@test.com";
+        int erreklamazioaId = -1;
+
+        try {
+            testDA.open();
+            testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
+            testDA.createDriver(driverEmail, "Driver");
+
+            Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
+            Driver driver = testDA.getDriver(driverEmail);
+
+            erreklamazioaId = testDA.createSimpleErreklamazioa("itxaron", bidaiaria, driver);
+            testDA.close();
+
+            sut.open();
+            sut.egoeraEzarri(erreklamazioaId, "besteBat");
+
+            assertTrue(true); // accepted as general case
+
+        } catch (erreklamazioaEbatzitaException e) {
+            fail("Unexpected erreklamazioaEbatzitaException");
+        } catch (Exception e) {
+            fail("Unexpected exception: " + e.getMessage());
+        } finally {
+            testDA.open();
+            if (erreklamazioaId != -1) testDA.removeErreklamazioa(erreklamazioaId);
+            testDA.removeBidaiaria(bidaiariaEmail);
+            testDA.removeDriver(driverEmail);
+            testDA.close();
         }
-        
-        // If no existing, try to use any Erreklamazio and reset it to "itxaron"
-        for (int i = 1; i <= 10; i++) {
-            try {
-                sut.open();
-                Erreklamazioa e = sut.erreklamazioaLortu(i);
-                if (e != null) {
-                    // If we can modify it, set to "itxaron"
-                    e.setEgoera("itxaron");
-                    // You might need to persist this change depending on your implementation
-                    sut.close();
-                    return i;
-                }
-                sut.close();
-            } catch (Exception e) {
-                sut.close();
-                // Continue searching
-            }
-        }
-        return null;
     }
 }

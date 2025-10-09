@@ -1,0 +1,3692 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 14:59:02 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 19472@DESKTOP-UM9CPDO
+
+[2025-10-09 14:59:02 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 14:59:02 #3 type.registry] 
+New type domain.Driver
+
+[2025-10-09 14:59:02 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 14:59:02 #5 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 14:59:02 #6 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 14:59:02 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 14:59:02 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 14:59:02 #9 type.registry] 
+New type domain.Kotxea
+
+[2025-10-09 14:59:02 #10 type.registry] 
+New type domain.Ride
+
+[2025-10-09 14:59:02 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2025-10-09 14:59:02 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 14:59:02 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 14:59:02 #14 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 14:59:02 #15 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 14:59:02 #16 type.registry] 
+New type domain.Admin
+
+[2025-10-09 14:59:02 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 14:59:02 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2025-10-09 14:59:02 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 14:59:02 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 14:59:02 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 14:59:02 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 14:59:02 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 14:59:02 #24 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 14:59:02 #25 type] 
+Type domain.Alerta is not enhanced.
+
+[2025-10-09 14:59:02 #26 type.registry] 
+New type domain.User
+
+[2025-10-09 14:59:02 #27 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 14:59:02 #28 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 14:59:02 #29 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 14:59:02 #30 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 14:59:02 #31 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 14:59:02 #32 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 14:59:02 #33 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 14:59:02 #34 type.registry] 
+New type domain.Admin
+
+[2025-10-09 14:59:02 #35 type.registry] 
+New type domain.Driver
+
+[2025-10-09 14:59:02 #36 type.registry] 
+New type domain.Ride
+
+[2025-10-09 14:59:02 #37 type.registry] 
+New type domain.Kotxea
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:00:09 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22216@DESKTOP-UM9CPDO
+
+[2025-10-09 15:00:09 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:00:09 #3 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:00:09 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:00:09 #5 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:00:09 #6 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:00:09 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:00:09 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:00:09 #9 type.registry] 
+New type domain.Kotxea
+
+[2025-10-09 15:00:09 #10 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:00:09 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2025-10-09 15:00:09 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:00:09 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:00:09 #14 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:00:09 #15 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:00:09 #16 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:00:09 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:00:09 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2025-10-09 15:00:09 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:00:09 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:00:09 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:00:09 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:00:09 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:00:09 #24 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:00:09 #25 type] 
+Type domain.Alerta is not enhanced.
+
+[2025-10-09 15:00:09 #26 type.registry] 
+New type domain.User
+
+[2025-10-09 15:00:09 #27 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:00:09 #28 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:00:09 #29 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:00:09 #30 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:00:09 #31 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:00:09 #32 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:00:09 #33 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:00:09 #34 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:00:09 #35 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:00:09 #36 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:00:09 #37 type.registry] 
+New type domain.Kotxea
+
+[2025-10-09 15:00:09 #38 type.registry] 
+New type domain.User
+
+[2025-10-09 15:00:09 #39 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:00:09 #40 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:00:09 #41 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:00:09 #42 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:00:09 #43 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:00:09 #44 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:00:09 #45 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:00:09 #46 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:00:09 #47 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:00:09 #48 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:00:09 #49 type.registry] 
+New type domain.Kotxea
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:01:35 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 15916@DESKTOP-UM9CPDO
+
+[2025-10-09 15:01:36 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:01:36 #3 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:01:36 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:01:36 #5 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:01:36 #6 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:01:36 #7 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:01:36 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:01:36 #9 type.registry] 
+New type domain.Kotxea
+
+[2025-10-09 15:01:36 #10 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:01:36 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2025-10-09 15:01:36 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:01:36 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:01:36 #14 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:01:36 #15 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:01:36 #16 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:01:36 #17 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:01:36 #18 type] 
+Type domain.Kotxea is not enhanced.
+
+[2025-10-09 15:01:36 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:01:36 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:01:36 #21 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:01:36 #22 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:01:36 #23 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:01:36 #24 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:01:36 #25 type] 
+Type domain.Alerta is not enhanced.
+
+[2025-10-09 15:01:36 #26 type.registry] 
+New type domain.User
+
+[2025-10-09 15:01:36 #27 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:01:36 #28 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:01:36 #29 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:01:36 #30 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:01:36 #31 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:01:36 #32 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:01:36 #33 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:01:36 #34 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:01:36 #35 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:01:36 #36 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:01:36 #37 type.registry] 
+New type domain.Kotxea
+
+[2025-10-09 15:01:36 #38 type.registry] 
+New type domain.User
+
+[2025-10-09 15:01:36 #39 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:01:36 #40 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:01:36 #41 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:01:36 #42 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:01:36 #43 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:01:36 #44 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:01:36 #45 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:01:36 #46 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:01:36 #47 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:01:36 #48 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:01:36 #49 type.registry] 
+New type domain.Kotxea
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:03:01 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 4416@DESKTOP-UM9CPDO
+
+[2025-10-09 15:03:01 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:03:01 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:03:01 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:03:01 #5 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:03:01 #6 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:03:01 #7 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:03:01 #8 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:03:01 #9 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:03:01 #10 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:03:01 #11 type] 
+Type domain.Balorazioa is not enhanced.
+
+[2025-10-09 15:03:01 #12 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:03:01 #13 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:03:01 #14 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:03:01 #15 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:03:01 #16 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:03:01 #17 type] 
+Type domain.Alerta is not enhanced.
+
+[2025-10-09 15:03:01 #18 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:03:01 #19 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:03:01 #20 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:03:01 #21 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:03:01 #22 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:03:01 #23 type.registry] 
+New type domain.Kotxea
+
+[2025-10-09 15:03:01 #24 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:03:01 #25 type] 
+Type domain.Kotxea is not enhanced.
+
+[2025-10-09 15:03:01 #26 type.registry] 
+New type domain.User
+
+[2025-10-09 15:03:01 #27 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:03:01 #28 type.registry] 
+New type domain.Balorazioa
+
+[2025-10-09 15:03:01 #29 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:03:01 #30 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:03:01 #31 type.registry] 
+New type domain.Alerta
+
+[2025-10-09 15:03:01 #32 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:03:01 #33 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:03:01 #34 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:03:01 #35 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:03:01 #36 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:03:01 #37 type.registry] 
+New type domain.Kotxea
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:09:27 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 5180@DESKTOP-UM9CPDO
+
+[2025-10-09 15:09:27 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:09:27 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:09:27 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:09:27 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:09:27 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:09:27 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:09:27 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:09:27 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:09:27 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:09:27 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:09:27 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:09:27 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:09:27 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:09:27 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:09:27 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:09:27 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:09:27 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:09:27 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:09:27 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:09:27 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:09:27 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:09:27 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:09:27 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:09:27 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:09:42 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 164@DESKTOP-UM9CPDO
+
+[2025-10-09 15:09:42 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:09:42 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:09:42 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:09:42 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:09:42 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:09:42 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:09:42 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:09:42 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:09:42 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:09:42 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:09:42 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:09:42 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:09:42 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:09:42 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:09:42 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:09:42 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:09:42 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:09:42 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:09:42 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:09:42 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:09:42 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:09:42 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:09:42 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:09:42 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:16:47 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 7836@DESKTOP-UM9CPDO
+
+[2025-10-09 15:16:47 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:16:47 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:16:47 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:16:47 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:16:47 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:16:47 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:16:47 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:16:47 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:16:47 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:16:47 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:16:47 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:16:47 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:16:47 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:16:47 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:16:47 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:16:47 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:16:47 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:16:47 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:16:47 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:16:47 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:16:47 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:16:47 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:16:47 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:16:47 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:20:28 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 21432@DESKTOP-UM9CPDO
+
+[2025-10-09 15:20:28 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:20:28 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:20:28 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:20:28 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:20:29 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:20:29 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:20:29 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:20:29 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:20:29 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:20:29 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:20:29 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:20:29 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:20:29 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:20:29 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:20:29 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:20:29 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:20:29 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:20:29 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:20:29 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:20:29 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:20:29 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:20:29 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:20:29 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:20:29 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:20:50 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 16444@DESKTOP-UM9CPDO
+
+[2025-10-09 15:20:50 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:20:50 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:20:50 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:20:50 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:20:50 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:20:50 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:20:50 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:20:50 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:20:50 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:20:50 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:20:50 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:20:50 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:20:50 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:20:50 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:20:50 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:20:50 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:20:50 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:20:50 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:20:50 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:20:50 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:20:50 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:20:50 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:20:50 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:20:50 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:21:21 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 6988@DESKTOP-UM9CPDO
+
+[2025-10-09 15:21:22 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:21:22 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:21:22 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:21:22 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:21:22 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:21:22 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:21:22 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:21:22 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:21:22 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:21:22 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:21:22 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:21:22 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:21:22 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:21:22 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:21:22 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:21:22 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:21:22 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:21:22 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:21:22 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:21:22 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:21:22 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:21:22 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:21:22 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:21:22 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:43:56 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 24236@DESKTOP-UM9CPDO
+
+[2025-10-09 15:43:56 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:43:56 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:43:56 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:43:56 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:43:56 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:43:56 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:43:56 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:43:56 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:43:56 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:43:56 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:43:56 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:43:56 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:43:56 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:43:56 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:43:56 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:43:56 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:43:56 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:43:56 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:43:56 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:43:56 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:43:56 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:43:56 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:43:56 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:43:56 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:44:47 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 23248@DESKTOP-UM9CPDO
+
+[2025-10-09 15:44:47 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:44:47 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:44:47 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:44:47 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:44:47 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:44:47 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:44:47 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:44:47 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:44:47 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:44:47 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:44:47 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:44:47 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:44:47 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:44:47 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:44:47 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:44:47 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:44:47 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:44:47 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:44:47 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:44:47 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:44:47 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:44:47 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:44:47 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:44:47 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:47:58 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 24292@DESKTOP-UM9CPDO
+
+[2025-10-09 15:47:59 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:47:59 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:47:59 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:47:59 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:47:59 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:47:59 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:47:59 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:47:59 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:47:59 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:47:59 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:47:59 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:47:59 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:47:59 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:47:59 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:47:59 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:47:59 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:47:59 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:47:59 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:47:59 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:47:59 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:47:59 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:47:59 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:47:59 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:47:59 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:48:14 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 24260@DESKTOP-UM9CPDO
+
+[2025-10-09 15:48:14 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:48:14 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:48:14 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:48:14 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:48:14 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:48:14 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:48:14 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:48:14 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:48:14 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:48:14 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:48:14 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:48:14 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:48:14 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:48:14 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:48:14 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:48:14 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:48:14 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:48:14 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:48:14 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:48:14 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:48:14 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:48:14 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:48:14 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:48:14 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:48:29 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 7496@DESKTOP-UM9CPDO
+
+[2025-10-09 15:48:29 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:48:29 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:48:29 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:48:29 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:48:29 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:48:29 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:48:29 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:48:29 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:48:29 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:48:29 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:48:29 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:48:29 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:48:29 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:48:29 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:48:29 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:48:29 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:48:29 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:48:29 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:48:29 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:48:29 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:48:29 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 15:48:29 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 15:48:29 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:48:29 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:50:21 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 8364@DESKTOP-UM9CPDO
+
+[2025-10-09 15:50:22 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:50:22 #3 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:50:22 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:50:22 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:50:22 #6 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:50:22 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:50:22 #8 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:50:22 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:50:22 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:50:22 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:50:22 #12 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:50:22 #13 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:50:22 #14 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:50:22 #15 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:50:22 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:50:22 #17 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:50:22 #18 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:50:22 #19 type] 
+Type domain.Bidaiaria is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:52:05 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 18760@DESKTOP-UM9CPDO
+
+[2025-10-09 15:52:05 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:52:05 #3 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:52:05 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:52:05 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:52:05 #6 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:52:05 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:52:05 #8 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:52:05 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:52:05 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:52:05 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:52:05 #12 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:52:05 #13 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:52:05 #14 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:52:05 #15 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:52:05 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:52:05 #17 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:52:05 #18 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:52:05 #19 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:52:05 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:52:05 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:52:05 #22 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:52:05 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 15:52:38 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 19828@DESKTOP-UM9CPDO
+
+[2025-10-09 15:52:38 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 15:52:38 #3 type.registry] 
+New type domain.Driver
+
+[2025-10-09 15:52:38 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 15:52:38 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 15:52:38 #6 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 15:52:38 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 15:52:38 #8 type.registry] 
+New type domain.Ride
+
+[2025-10-09 15:52:38 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 15:52:38 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 15:52:38 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 15:52:38 #12 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 15:52:38 #13 type.registry] 
+New type domain.Admin
+
+[2025-10-09 15:52:38 #14 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 15:52:38 #15 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 15:52:38 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 15:52:38 #17 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 15:52:38 #18 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 15:52:38 #19 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 15:52:38 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 15:52:38 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 15:52:38 #22 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 15:52:38 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:05:09 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22000@DESKTOP-UM9CPDO
+
+[2025-10-09 16:05:09 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:05:09 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:05:09 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:05:09 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:05:09 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:05:09 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:05:09 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:05:09 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:05:09 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:05:09 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:05:09 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:05:09 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:05:09 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:05:09 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:05:09 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:05:09 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:05:09 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:05:09 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:05:09 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:05:09 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:05:09 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:05:09 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:05:09 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:05:09 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:09:41 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22512@DESKTOP-UM9CPDO
+
+[2025-10-09 16:09:41 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:09:41 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:09:41 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:09:41 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:09:41 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:09:41 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:09:41 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:09:41 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:09:41 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:09:41 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:09:41 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:09:41 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:09:41 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:09:41 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:09:41 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:09:41 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:09:41 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:09:41 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:09:41 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:09:41 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:09:41 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:09:41 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:09:41 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:09:41 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:10:07 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 17964@DESKTOP-UM9CPDO
+
+[2025-10-09 16:10:07 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:10:07 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:10:07 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:10:07 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:10:07 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:10:07 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:10:07 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:10:07 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:10:07 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:10:07 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:10:07 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:10:07 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:10:07 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:10:07 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:10:07 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:10:07 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:10:07 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:10:07 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:10:08 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:10:08 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:10:08 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:10:08 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:10:08 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:10:08 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:14:19 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 18180@DESKTOP-UM9CPDO
+
+[2025-10-09 16:14:19 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:14:19 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:14:19 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:14:19 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:14:19 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:14:19 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:14:19 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:14:19 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:14:19 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:14:19 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:14:19 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:14:19 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:14:19 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:14:19 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:14:19 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:14:19 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:14:19 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:14:19 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:14:19 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:14:19 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:14:19 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:14:19 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:14:19 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:14:19 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:17:30 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22920@DESKTOP-UM9CPDO
+
+[2025-10-09 16:17:30 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:17:30 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:17:30 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:17:30 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:17:30 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:17:30 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:17:30 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:17:30 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:17:30 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:17:30 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:17:30 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:17:30 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:17:30 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:17:30 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:17:30 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:17:30 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:17:30 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:17:30 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:17:30 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:17:30 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:17:30 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:17:30 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:17:30 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:17:30 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:18:37 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 12364@DESKTOP-UM9CPDO
+
+[2025-10-09 16:18:37 #2 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:18:37 #3 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:18:37 #4 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:18:37 #5 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:18:37 #6 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:18:37 #7 type.registry] 
+New type domain.User
+
+[2025-10-09 16:18:37 #8 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:18:37 #9 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:18:37 #10 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:18:37 #11 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:18:37 #12 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:18:37 #13 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:18:37 #14 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:18:37 #15 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:18:37 #16 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:18:37 #17 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:18:37 #18 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:18:37 #19 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:18:37 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:18:37 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:18:37 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:18:37 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:18:37 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:18:37 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:19:17 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 6312@DESKTOP-UM9CPDO
+
+[2025-10-09 16:19:18 #2 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:19:18 #3 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:19:18 #4 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:19:18 #5 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:19:18 #6 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:19:18 #7 type.registry] 
+New type domain.User
+
+[2025-10-09 16:19:18 #8 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:19:18 #9 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:19:18 #10 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:19:18 #11 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:19:18 #12 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:19:18 #13 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:19:18 #14 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:19:18 #15 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:19:18 #16 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:19:18 #17 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:19:18 #18 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:19:18 #19 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:19:18 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:19:18 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:19:18 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:19:18 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:19:18 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:19:18 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:21:12 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 23288@DESKTOP-UM9CPDO
+
+[2025-10-09 16:21:13 #2 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:21:13 #3 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:21:13 #4 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:21:13 #5 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:21:13 #6 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:21:13 #7 type.registry] 
+New type domain.User
+
+[2025-10-09 16:21:13 #8 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:21:13 #9 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:21:13 #10 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:21:13 #11 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:21:13 #12 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:21:13 #13 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:21:13 #14 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:21:13 #15 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:21:13 #16 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:21:13 #17 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:21:13 #18 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:21:13 #19 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:21:13 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:21:13 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:21:13 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:21:13 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:21:13 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:21:13 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:22:17 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 17804@DESKTOP-UM9CPDO
+
+[2025-10-09 16:22:17 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:22:17 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:22:17 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:22:17 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:22:17 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:22:17 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:22:17 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:22:17 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:22:17 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:22:17 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:22:17 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:22:17 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:22:17 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:22:17 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:22:17 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:22:17 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:22:17 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:22:17 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:22:17 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:22:17 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:22:17 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:22:17 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:22:17 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:22:17 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:22:36 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 19904@DESKTOP-UM9CPDO
+
+[2025-10-09 16:22:36 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:22:36 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:22:36 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:22:36 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:22:36 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:22:36 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:22:36 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:22:36 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:22:36 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:22:36 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:22:36 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:22:36 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:22:36 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:22:36 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:22:36 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:22:36 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:22:36 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:22:36 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:22:36 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:22:36 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:22:36 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:22:36 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:22:36 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:22:36 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:23:02 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 7660@DESKTOP-UM9CPDO
+
+[2025-10-09 16:23:03 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:23:03 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:23:03 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:23:03 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:23:03 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:23:03 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:23:03 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:23:03 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:23:03 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:23:03 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:23:03 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:23:03 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:23:03 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:23:03 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:23:03 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:23:03 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:23:03 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:23:03 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:23:03 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:23:03 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:23:03 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:23:03 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:23:03 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:23:03 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:24:11 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22352@DESKTOP-UM9CPDO
+
+[2025-10-09 16:24:11 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:24:11 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:24:11 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:24:11 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:24:11 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:24:11 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:24:11 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:24:11 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:24:11 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:24:11 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:24:11 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:24:11 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:24:11 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:24:11 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:24:11 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:24:11 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:24:11 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:24:11 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:24:11 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:24:11 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:24:11 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:24:11 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:24:11 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:24:12 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:25:09 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22884@DESKTOP-UM9CPDO
+
+[2025-10-09 16:25:09 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:25:09 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:25:09 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:25:09 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:25:09 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:25:09 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:25:09 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:25:09 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:25:09 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:25:09 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:25:09 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:25:09 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:25:09 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:25:09 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:25:09 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:25:09 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:25:09 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:25:09 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:25:09 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:25:09 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:25:09 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:25:09 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:25:09 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:25:09 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:25:25 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 19984@DESKTOP-UM9CPDO
+
+[2025-10-09 16:25:25 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:25:25 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:25:25 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:25:25 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:25:25 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:25:25 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:25:25 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:25:25 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:25:25 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:25:25 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:25:25 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:25:25 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:25:25 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:25:25 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:25:25 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:25:25 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:25:25 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:25:25 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:25:25 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:25:25 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:25:25 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:25:25 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:25:25 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:25:25 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:26:05 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22316@DESKTOP-UM9CPDO
+
+[2025-10-09 16:26:05 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:26:05 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:26:05 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:26:05 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:26:05 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:26:05 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:26:05 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:26:05 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:26:05 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:26:05 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:26:05 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:26:05 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:26:05 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:26:05 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:26:05 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:26:05 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:26:05 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:26:05 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:26:05 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:26:05 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:26:05 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:26:05 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:26:05 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:26:05 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:28:19 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 4416@DESKTOP-UM9CPDO
+
+[2025-10-09 16:28:19 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:28:19 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:28:19 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:28:19 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:28:19 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:28:19 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:28:19 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:28:19 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:28:19 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:28:19 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:28:19 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:28:19 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:28:19 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:28:19 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:28:19 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:28:19 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:28:19 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:28:19 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:28:19 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:28:19 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:28:19 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:28:19 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:28:19 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:28:19 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:28:30 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 21076@DESKTOP-UM9CPDO
+
+[2025-10-09 16:28:31 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:28:31 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:28:31 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:28:31 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:28:31 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:28:31 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:28:31 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:28:31 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:28:31 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:28:31 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:28:31 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:28:31 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:28:31 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:28:31 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:28:31 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:28:31 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:28:31 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:28:31 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:28:31 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:28:31 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:28:31 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:28:31 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:28:31 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:28:31 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:29:15 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 17196@DESKTOP-UM9CPDO
+
+[2025-10-09 16:29:15 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:29:15 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:29:15 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:29:15 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:29:15 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:29:15 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:29:15 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:29:15 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:29:15 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:29:15 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:29:15 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:29:15 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:29:15 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:29:15 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:29:15 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:29:15 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:29:15 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:29:15 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:29:15 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:29:15 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:29:15 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:29:15 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:29:15 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:29:15 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:34:56 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 23868@DESKTOP-UM9CPDO
+
+[2025-10-09 16:34:56 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:34:56 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:34:56 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:34:56 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:34:56 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:34:56 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:34:56 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:34:56 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:34:56 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:34:56 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:34:56 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:34:56 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:34:56 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:34:56 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:34:56 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:34:56 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:34:56 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:34:56 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:34:56 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:34:56 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:34:56 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:34:56 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:34:56 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:34:56 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:35:30 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 21232@DESKTOP-UM9CPDO
+
+[2025-10-09 16:35:30 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:35:30 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:35:30 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:35:30 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:35:30 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:35:30 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:35:30 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:35:30 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:35:30 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:35:30 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:35:30 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:35:30 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:35:30 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:35:30 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:35:30 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:35:30 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:35:30 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:35:30 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:35:30 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:35:30 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:35:30 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:35:30 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:35:30 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:35:30 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:36:55 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22660@DESKTOP-UM9CPDO
+
+[2025-10-09 16:36:55 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:36:55 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:36:55 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:36:55 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:36:55 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:36:55 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:36:55 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:36:55 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:36:55 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:36:55 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:36:55 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:36:55 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:36:55 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:36:55 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:36:55 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:36:55 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:36:55 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:36:55 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:36:55 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:36:55 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:36:55 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:36:55 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:36:55 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:36:55 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:51:14 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 23528@DESKTOP-UM9CPDO
+
+[2025-10-09 16:51:14 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 16:51:14 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:51:14 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:51:14 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:51:14 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:51:14 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:51:14 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:51:14 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 16:51:14 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:51:14 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:51:14 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:51:14 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:51:14 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:51:14 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:51:14 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:51:14 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:51:14 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:51:14 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:51:14 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 16:51:14 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 16:51:14 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 16:51:14 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 16:51:14 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 16:51:14 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:51:47 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 24028@DESKTOP-UM9CPDO
+
+[2025-10-09 16:51:47 #2 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:51:47 #3 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:51:47 #4 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:51:47 #5 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:51:47 #6 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:51:47 #7 type.registry] 
+New type domain.User
+
+[2025-10-09 16:51:47 #8 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:51:47 #9 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:51:47 #10 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:51:47 #11 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:51:47 #12 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:51:47 #13 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:51:47 #14 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:51:47 #15 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:51:47 #16 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:51:47 #17 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:51:47 #18 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:51:47 #19 type] 
+Type domain.Mugimendua is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 16:53:33 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 7788@DESKTOP-UM9CPDO
+
+[2025-10-09 16:53:33 #2 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 16:53:33 #3 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 16:53:33 #4 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 16:53:33 #5 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 16:53:33 #6 type.registry] 
+New type domain.Admin
+
+[2025-10-09 16:53:33 #7 type.registry] 
+New type domain.User
+
+[2025-10-09 16:53:33 #8 type.registry] 
+New type domain.Driver
+
+[2025-10-09 16:53:33 #9 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 16:53:33 #10 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 16:53:33 #11 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 16:53:33 #12 type.registry] 
+New type domain.Ride
+
+[2025-10-09 16:53:33 #13 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 16:53:33 #14 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 16:53:33 #15 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 16:53:33 #16 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 16:53:33 #17 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 16:53:33 #18 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 16:53:33 #19 type] 
+Type domain.Mugimendua is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 17:10:51 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 15716@DESKTOP-UM9CPDO
+
+[2025-10-09 17:10:51 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 17:10:51 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 17:10:51 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 17:10:51 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 17:10:51 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 17:10:51 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 17:10:51 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 17:10:51 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 17:10:51 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 17:10:51 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 17:10:51 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 17:10:51 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 17:10:51 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 17:10:51 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 17:10:51 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 17:10:51 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 17:10:51 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 17:10:51 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 17:10:51 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 17:10:51 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 17:10:51 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 17:10:51 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 17:10:51 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 17:10:51 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 17:11:53 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 22256@DESKTOP-UM9CPDO
+
+[2025-10-09 17:11:53 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 17:11:53 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 17:11:53 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 17:11:53 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 17:11:53 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 17:11:53 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 17:11:53 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 17:11:53 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 17:11:53 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 17:11:53 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 17:11:53 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 17:11:53 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 17:11:53 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 17:11:53 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 17:11:53 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 17:11:53 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 17:11:53 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 17:11:53 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 17:11:53 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 17:11:53 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 17:11:53 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 17:11:53 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 17:11:53 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 17:11:53 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 17:13:19 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 17808@DESKTOP-UM9CPDO
+
+[2025-10-09 17:13:19 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 17:13:19 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 17:13:19 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 17:13:19 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 17:13:19 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 17:13:19 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 17:13:19 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 17:13:19 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 17:13:19 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 17:13:19 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 17:13:19 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 17:13:19 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 17:13:19 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 17:13:19 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 17:13:19 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 17:13:19 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 17:13:19 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 17:13:19 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 17:13:19 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 17:13:19 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 17:13:19 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 17:13:19 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 17:13:19 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 17:13:19 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-09 17:17:54 #1 store] 
+Database 'C:\Users\ikers\Downloads\Rides24\src\main\resources\rides.temp' is opened by 14784@DESKTOP-UM9CPDO
+
+[2025-10-09 17:17:54 #2 type.registry] 
+New type domain.User
+
+[2025-10-09 17:17:54 #3 type.registry] 
+New type domain.Bidaiaria
+
+[2025-10-09 17:17:54 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-09 17:17:54 #5 type.registry] 
+New type domain.Mugimendua
+
+[2025-10-09 17:17:54 #6 type] 
+Type domain.Bidaiaria is not enhanced.
+
+[2025-10-09 17:17:54 #7 type.registry] 
+New type domain.Erreklamazioa
+
+[2025-10-09 17:17:54 #8 type.registry] 
+New type domain.Erreserba
+
+[2025-10-09 17:17:54 #9 type] 
+Type domain.Mugimendua is not enhanced.
+
+[2025-10-09 17:17:54 #10 type] 
+Type domain.Erreklamazioa is not enhanced.
+
+[2025-10-09 17:17:54 #11 type.registry] 
+New type domain.Mezua
+
+[2025-10-09 17:17:54 #12 type.registry] 
+New type domain.Admin
+
+[2025-10-09 17:17:54 #13 type.registry] 
+New type domain.Driver
+
+[2025-10-09 17:17:54 #14 type] 
+Type domain.Erreserba is not enhanced.
+
+[2025-10-09 17:17:54 #15 type.registry] 
+New type domain.Ride
+
+[2025-10-09 17:17:54 #16 type] 
+Type domain.Mezua is not enhanced.
+
+[2025-10-09 17:17:54 #17 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-09 17:17:54 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-09 17:17:54 #19 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-09 17:17:54 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-10-09 17:17:54 #21 type.registry] 
+New type java.util.Vector<domain.Mugimendua>
+
+[2025-10-09 17:17:54 #22 type.registry] 
+New type java.util.Vector<domain.Erreserba>
+
+[2025-10-09 17:17:54 #23 type.registry] 
+New type java.util.Vector<domain.Erreklamazioa>
+
+[2025-10-09 17:17:54 #24 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-10-09 17:17:54 #25 type.registry] 
+New type java.util.Vector<domain.Mezua>
+

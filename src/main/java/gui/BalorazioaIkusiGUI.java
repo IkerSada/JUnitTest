@@ -15,7 +15,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
 import businessLogic.BLFacade;
-import domain.Balorazioa;
+
+//import domain.Balorazioa;
 import domain.Bidaiaria;
 import domain.Driver;
 import domain.User;
@@ -60,7 +61,7 @@ public class BalorazioaIkusiGUI extends JFrame {
 		tableBalorazioak.setForeground(Color.BLACK);
 		tableBalorazioak.setBackground(Color.WHITE);
 
-		loadBalorazioak(u);
+		//loadBalorazioak(u);
 
 		btnAtzera = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Back"));
 		btnAtzera.setBounds(214, 267, 146, 31);
@@ -84,7 +85,7 @@ public class BalorazioaIkusiGUI extends JFrame {
 
 	}
 
-
+/*
 	private void loadBalorazioak(User u) {
 		BLFacade facade = MainGUI.getBusinessLogic();
 		List<Balorazioa> balorazioak = facade.balorazioaErakutsi(u);
@@ -110,7 +111,7 @@ public class BalorazioaIkusiGUI extends JFrame {
 			}
 			tableBalorazioak.setRowSelectionInterval(0, 0);
 		}
-	}
+	}*/
 
 
 }

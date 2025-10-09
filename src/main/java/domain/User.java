@@ -34,10 +34,11 @@ public abstract class User {
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private List<Mugimendua> mugimenduak=new Vector<Mugimendua>();	 
 		
+	/*
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private List<Balorazioa> balorazioak=new Vector<Balorazioa>(); 	// GEHITU
-	
+	*/
 
 		
 	public User() {		
@@ -155,7 +156,7 @@ public abstract class User {
 	public void diruaKendu(float d) {
 		dirua -= d;
 	}
-		
+		/*
 	// GEHITU
 	public List<Balorazioa> getBalorazioak() { 
 		return balorazioak;
@@ -171,5 +172,5 @@ public abstract class User {
 		Balorazioa b = new Balorazioa(puntuazioa, deskripzioa, nork);
 		balorazioak.add(b);
 	}
-	
+	*/
 }

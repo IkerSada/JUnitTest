@@ -10,13 +10,13 @@ import dataAccess.DataAccess;
 import domain.Ride;
 import domain.User;
 import domain.Admin;
-import domain.Alerta;
-import domain.Balorazioa;
+//import domain.Alerta;
+//import domain.Balorazioa;
 import domain.Bidaiaria;
 import domain.Driver;
 import domain.Erreklamazioa;
 import domain.Erreserba;
-import domain.Kotxea;
+//import domain.Kotxea;
 import domain.Mezua;
 import domain.Mugimendua;
 import exceptions.RideMustBeLaterThanTodayException;
@@ -191,28 +191,29 @@ public class BLFacadeImplementation  implements BLFacade {
 	public void erreserbaBaieztatu(int erreserbaZenbaki) {
 		dbManager.erreserbaBaieztatu(erreserbaZenbaki);
 	}
-
+/*
 	// ZUZENDU
 	@WebMethod
 	public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException {
 		return dbManager.kotxeGehitu(matrikula,eserleku,marka,gidari);
 	}
-	
+	*/
+	/*
 	@WebMethod
 	public int getnPlaces(String matrikula) {
 		return dbManager.getnPlaces(matrikula);
 	}
-
+*/
 	@WebMethod
 	public List<Erreserba> getBidaiariarenErreserbak(Bidaiaria b) {
 		return dbManager.getBidaiariarenErreserbak(b);
 	}
-
+/*
 	@WebMethod
 	public List<Kotxea> kotxeakEskuratu(Driver d) {
 		return dbManager.kotxeakEskuratu(d);
 	}
-
+*/
 	// KENDU
 	//	@WebMethod
 	//	public boolean kotxeaExistitu(String matrikula) {
@@ -233,25 +234,25 @@ public class BLFacadeImplementation  implements BLFacade {
 	public void bidaiKantzelatu(Driver gidari,int bidaiZenbaki) {
 		dbManager.bidaiKantzelatu(gidari,bidaiZenbaki);
 	}
-
+/*
 	// GEHITU
 	@WebMethod
 	public List<Balorazioa> balorazioaErakutsi(User u) { 
 		return dbManager.balorazioaErakutsi(u);
 	}
-
+*/
 	// GEHITU
 	@WebMethod 
 	public void erabiltzaileaEzabatu(User u) { 
 		dbManager.erabiltzaileaEzabatu(u);
 	}
-
+/*
 	// GEHITU
 	@WebMethod  
 	public void balorazioaSortu(String nori, int puntuazioa, String deskripzioa, User nork) {
 		dbManager.balorazioaSortu(nori,puntuazioa,deskripzioa,nork);
 
-	}
+	}*/
 
 	// GEHITU
 	@WebMethod
@@ -286,7 +287,7 @@ public class BLFacadeImplementation  implements BLFacade {
 	public List<Erreserba> getBaloratuGabekoErreserbak(Bidaiaria b) {
 		return dbManager.getBaloratuGabekoErreserbak(b);
 	}
-
+/*
 	// GEHITU
 	@WebMethod
 	public List<Alerta> alertaIkusi(Bidaiaria b) { 
@@ -298,7 +299,7 @@ public class BLFacadeImplementation  implements BLFacade {
 	public void alertaSortu(String nondik, String nora, Date data, Bidaiaria b) throws AlertaAlreadyExistException { 
 		dbManager.alertaSortu(nondik, nora, data, b);
 	}
-
+*/
 	// GEHITU
 	@WebMethod
 	public List<Erreklamazioa> erreklamazioaErakutsiBidaiari(Bidaiaria b) {
@@ -342,12 +343,12 @@ public class BLFacadeImplementation  implements BLFacade {
 	public void egoeraEzarri(int errekzbk, String egoera)throws erreklamazioaEbatzitaException {
 		dbManager.egoeraEzarri(errekzbk,egoera);
 	}
-
+/*
 	// GEHITU
 	@WebMethod
 	public void alertakEguneratu(Ride r) {
 		dbManager.alertakEguneratu(r);
-	}
+	}*/
 	
 	// GEHITU
 	@WebMethod
@@ -359,6 +360,30 @@ public class BLFacadeImplementation  implements BLFacade {
 	@WebMethod 
 	public Ride getRide(int bidaiZenbaki) {
 		return dbManager.getRide(bidaiZenbaki);
+	}
+
+	@Override
+	public int getnPlaces(String matrikula) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void balorazioaSortu(String nori, int puntuazioa, String deskripzioa, User nork) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void alertaSortu(String nondik, String nora, Date data, Bidaiaria b) throws AlertaAlreadyExistException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void alertakEguneratu(Ride r) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

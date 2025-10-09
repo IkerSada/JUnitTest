@@ -21,13 +21,13 @@ import javax.persistence.TypedQuery;
 import configuration.ConfigXML;
 import configuration.UtilDate;
 import domain.Admin;
-import domain.Alerta;
-import domain.Balorazioa;
+//import domain.Alerta;
+//import domain.Balorazioa;
 import domain.Bidaiaria;
 import domain.Driver;
 import domain.Erreklamazioa;
 import domain.Erreserba;
-import domain.Kotxea;
+//import domain.Kotxea;
 import domain.Mezua;
 import domain.Mugimendua;
 import domain.Ride;
@@ -82,7 +82,7 @@ public class DataAccess  {
 	 * This method is invoked by the business logic (constructor of BLFacadeImplementation) when the option "initialize" is declared in the tag dataBaseOpenMode of resources/config.xml file
 	 */	
 	public void initializeDB(){
-
+/*
 		db.getTransaction().begin();
 
 		try {
@@ -168,7 +168,7 @@ public class DataAccess  {
 		}
 		catch (Exception e){
 			e.printStackTrace();
-		}
+		}*/
 	}
 
 	/**
@@ -555,7 +555,7 @@ public class DataAccess  {
 		db.getTransaction().commit();
 		close();
 	}
-
+/*
 	// ZUZENDU
 	public Kotxea kotxeGehitu(String matrikula, int eserleku, String marka, Driver gidari) throws KotxeaAlreadyExistException {
 		open();
@@ -588,7 +588,7 @@ public class DataAccess  {
 		close();
 		return k.getnEserleku();
 	}
-
+*/
 	public List<Erreserba> getBidaiariarenErreserbak(Bidaiaria b) {
 		open();
 
@@ -601,7 +601,7 @@ public class DataAccess  {
 		close();
 		return b2.getErreserbak();
 	}
-
+/*
 	public List<Kotxea> kotxeakEskuratu(Driver d) {
 		open();
 
@@ -614,7 +614,7 @@ public class DataAccess  {
 		close();
 		return d2.getKotxeak();
 	}
-
+*/
 	// KENDU
 	//	public boolean kotxeaExistitu(String matrikula) {
 	//		open();
@@ -661,7 +661,7 @@ public class DataAccess  {
 		close();
 		return d2.getBidaiakMartxan();
 	}
-
+/*
 	// GEHITU
 	public List<Balorazioa> balorazioaErakutsi(User u) { 
 		open();
@@ -670,7 +670,7 @@ public class DataAccess  {
 		close();
 		return u2.getBalorazioak();
 	}
-
+*/
 	// GEHITU
 	public void erabiltzaileaEzabatu(User u) { 
 		open();
@@ -680,7 +680,7 @@ public class DataAccess  {
 		db.getTransaction().commit();
 		close();
 	}
-
+/*
 	// GEHITU
 	public void balorazioaSortu(String nori, int puntuazioa, String deskripzioa, User nork) { 
 		open();
@@ -689,7 +689,7 @@ public class DataAccess  {
 		u.addBalorazioa(puntuazioa, deskripzioa, nork);
 		db.getTransaction().commit();
 		close();
-	}
+	}*/
 
 	// GEHITU
 	public void erreserbaBaloratuDa(Integer erreserbaZenbaki) {
@@ -754,7 +754,7 @@ public class DataAccess  {
 		close();
 		return b2.getBaloratuGabekoErreserbak();
 	}
-
+/*
 	// GEHITU
 	public List<Alerta> alertaIkusi(Bidaiaria b){ 
 		List<Alerta> alertak = new ArrayList<Alerta>();
@@ -766,8 +766,8 @@ public class DataAccess  {
 		db.getTransaction().commit();
 		close();
 		return alertak;
-	}
-
+	}*/
+/*
 	// GEHITU
 	public void alertaSortu(String nondik, String nora, Date data, Bidaiaria b) throws AlertaAlreadyExistException {
 		open();
@@ -778,7 +778,7 @@ public class DataAccess  {
 		db.getTransaction().commit();
 		close();
 	}
-
+*/
 	// GEHITU
 	public List<Erreklamazioa> erreklamazioaErakutsiBidaiari(Bidaiaria b) {
 		open();
@@ -843,12 +843,14 @@ public class DataAccess  {
 		a2.erreklamazioaKendu(e);
 		db.getTransaction().commit();
 		close();
-	}
+	} 
 
 	// GEHITU
 	public void egoeraEzarri(int errekzbk, String egoera) throws erreklamazioaEbatzitaException { 
 		open();
+	
 		db.getTransaction().begin();
+		
 		Erreklamazioa e = db.find(Erreklamazioa.class, errekzbk);
 		if(e.getEgoera().equals("itxaron")) {
 			e.setEgoera(egoera);
@@ -873,7 +875,8 @@ public class DataAccess  {
 		close();
 	}
 
-	// GEHITU
+	// GEHITU 
+	/*
 	public void alertakEguneratu(Ride r) {
 		open();
 		TypedQuery<Alerta> query = db.createQuery("SELECT a FROM Alerta a", Alerta.class);
@@ -895,8 +898,8 @@ public class DataAccess  {
 		}
 		db.getTransaction().commit();
 		close();
-	}
-
+	}*/
+ 
 	// GEHITU
 	private boolean egunBerdinakDira(Date d1, Date d2) {
 		LocalDate ld1 = d1.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
