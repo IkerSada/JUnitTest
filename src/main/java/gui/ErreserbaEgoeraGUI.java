@@ -74,18 +74,20 @@ public class ErreserbaEgoeraGUI extends JFrame {
 	}
 
 
+	
 	private void loadErreserbak(Bidaiaria b) {
+		String etiketa = "Etiquetas";
 		BLFacade facade = MainGUI.getBusinessLogic();
 		List<Erreserba> erreserbak = facade.getBidaiariarenErreserbak(b);
 
 		String[] columnNames = {ResourceBundle.getBundle("Etiquetas").getString("From"),
-				ResourceBundle.getBundle("Etiquetas").getString("To"),
-				ResourceBundle.getBundle("Etiquetas").getString("Date"),
-				ResourceBundle.getBundle("Etiquetas").getString("Price"),
-				ResourceBundle.getBundle("Etiquetas").getString("Traveler"),
-				ResourceBundle.getBundle("Etiquetas").getString("NumberOfPlaces"),
-				ResourceBundle.getBundle("Etiquetas").getString("BookNumber"),
-				ResourceBundle.getBundle("Etiquetas").getString("Status")};
+				ResourceBundle.getBundle(etiketa).getString("To"),
+				ResourceBundle.getBundle(etiketa).getString("Date"),
+				ResourceBundle.getBundle(etiketa).getString("Price"),
+				ResourceBundle.getBundle(etiketa).getString("Traveler"),
+				ResourceBundle.getBundle(etiketa).getString("NumberOfPlaces"),
+				ResourceBundle.getBundle(etiketa).getString("BookNumber"),
+				ResourceBundle.getBundle(etiketa).getString("Status")};
 		model = new DefaultTableModel(columnNames, 0);
 
 		tableErreserbaOnartuak.setModel(model);

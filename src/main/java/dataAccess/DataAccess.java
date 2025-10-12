@@ -313,34 +313,54 @@ public class DataAccess  {
 
 
 
-	public boolean erregistratu(String izena, String abizena, Date jaiotzeData, String sexua, String erabiltzaileMota, String email, String pasahitza) {
-		open();
-		if(erabiltzaileMota.equals("Gidaria")) {
-			Driver u = db.find(Driver.class,email);
-			if (u==null) {
-				db.getTransaction().begin();
-				Driver d=new Driver(izena, abizena, jaiotzeData, sexua, email, pasahitza);
-				db.persist(d);
-				db.getTransaction().commit();
-				close();
-				return true;
-			} else {
-				return false;
-			}
-		} else {
-			Bidaiaria u = db.find(Bidaiaria.class,email);
-			if (u==null) {
-				db.getTransaction().begin();
-				Bidaiaria b=new Bidaiaria(izena, abizena, jaiotzeData, sexua, email, pasahitza);
-				db.persist(b);
-				db.getTransaction().commit();
-				close();
-				return true;
-			} else {
-				return false;
-			}
-		}
+	public boolean erregistratu(UserData data) {
+	    open();
+	    String email = data.getEmail();
+
+	    if (data.getErabiltzaileMota().equals("Gidaria")) {
+	        Driver u = db.find(Driver.class, email);
+	        if (u == null) {
+	            db.getTransaction().begin();
+	            Driver d = new Driver(
+	                data.getIzena(),
+	                data.getAbizena(),
+	                data.getJaiotzeData(),
+	                data.getSexua(),
+	                data.getEmail(),
+	                data.getPasahitza()
+	            );
+	            db.persist(d);
+	            db.getTransaction().commit();
+	            close();
+	            return true;
+	        } else {
+	            close();
+	            return false;
+	        }
+	    } else { // Bidaiaria
+	        Bidaiaria u = db.find(Bidaiaria.class, email);
+	        if (u == null) {
+	            db.getTransaction().begin();
+	            Bidaiaria b = new Bidaiaria(
+	                data.getIzena(),
+	                data.getAbizena(),
+	                data.getJaiotzeData(),
+	                data.getSexua(),
+	                data.getEmail(),
+	                data.getPasahitza()
+	            );
+	            db.persist(b);
+	            db.getTransaction().commit();
+	            close();
+	            return true;
+	        } else {
+	            close();
+	            return false;
+	        }
+	    }
 	}
+
+
 
 	public boolean saioaHasi(String email, String pasahitza) {
 		open();
@@ -443,16 +463,24 @@ public class DataAccess  {
 
 	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
 		open();
-
+		db.getTransaction().begin();
 		// ZUZENDU
 		// Bidaiaria bidaiari = db.find(Bidaiaria.class,bidaiari2.getEmail());
 		String email = bidaiari2.getEmail();
-		Bidaiaria bidaiari = db.find(Bidaiaria.class,email);
-		//
-
+		Bidaiaria bidaiari = getBidaiaria(email);
 		Ride r = db.find(Ride.class,bidaiZenbaki);
+		Erreserba e = eguneratuErreserba(bidaiZenbaki, eserlekuKop, bidaiari, r);
+		// ZUZENDU
+		// bidaiari.setDirua(bidaiari.getDirua()-r.getPrice()*eserlekuKop);		
+		eguneratuDiruaEtaMugimendua(eserlekuKop, bidaiari, r, e);
+		//
+		db.getTransaction().commit();
+		close();
+	}
+
+	private Erreserba eguneratuErreserba(int bidaiZenbaki, int eserlekuKop, Bidaiaria bidaiari, Ride r) {
 		Erreserba e = bidaiari.erreserbaBilatu(bidaiZenbaki);
-		db.getTransaction().begin();
+
 		if(e==null) {
 			e = bidaiari.addErreserba(r,eserlekuKop);
 		} else {
@@ -464,29 +492,38 @@ public class DataAccess  {
 			// ZUZENDU
 			// e.setnPlaces(e.getnPlaces()+eserlekuKop);	
 			e.updatePlaces(eserlekuKop);
-			//
-
 		}
 		r.updateSeat(eserlekuKop);
+		return e;
+	}
 
-		// ZUZENDU
-		// bidaiari.setDirua(bidaiari.getDirua()-r.getPrice()*eserlekuKop);		
+	private void eguneratuDiruaEtaMugimendua(int eserlekuKop, Bidaiaria bidaiari, Ride r, Erreserba e) {
 		float prezioa = r.getBidaiarenPrezioa(eserlekuKop);
 		bidaiari.diruaKendu(prezioa);
-
 		// e.setDiruIzoztua(e.getDiruIzoztua()+r.getPrice()*eserlekuKop);						
 		e.eguneratuDiruIzoztua(prezioa);	
-
 		// Mugimendua m=new Mugimendua("Diruzorrotik erreserbaren prezioa kobratu da (diru hori izoztuta)");	
 		// bidaiari.addMugimendua(m);
 		// db.persist(m);
 		bidaiari.addMugimendua("Diruzorrotik erreserbaren prezioa kobratu da (diru hori izoztuta)");
-		//
-
-		db.getTransaction().commit();
-		close();
 	}
 
+	private Bidaiaria getBidaiaria(String email) {
+		Bidaiaria bidaiari = db.find(Bidaiaria.class,email);
+		return bidaiari;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public void erreserbaOnartu(int erreserbaZenbaki, Driver gidari) {
 		open();
 		Erreserba e = db.find(Erreserba.class,erreserbaZenbaki);
@@ -498,26 +535,13 @@ public class DataAccess  {
 
 	public void erreserbaDeuseztatu(int erreserbaZenbaki) {
 		open();
-		Erreserba e = db.find(Erreserba.class,erreserbaZenbaki);
 		db.getTransaction().begin();
 
-		// ZUZENDU
-		// e.getTraveler().setDirua(e.getTraveler().getDirua()+e.getBidaia().getPrice()*e.getnPlaces());	
-		Bidaiaria b = e.getTraveler();
-		float dirua = e.getDiruIzoztua();
-		b.diruaGehitu(dirua);
-
-		// e.getBidaia().setnPlaces(e.getBidaia().getnPlaces()+e.getnPlaces());	
-		Ride r = e.getBidaia();
-		int eserlekuKop = e.getnPlaces();
-		r.updateSeatPlus(eserlekuKop);
-
-		// Mugimendua m=new Mugimendua("Erreserba deuseztatu da eta dirua itzuli zaizu");
-		// e.getTraveler().addMugimendua(m);
-		// b.addMugimendua(m);
-		// db.persist(m);
-		b.addMugimendua("Erreserba deuseztatu da eta dirua itzuli zaizu");
-		//
+		Erreserba e = db.find(Erreserba.class,erreserbaZenbaki);
+		
+		itzuliDirua(e);
+		updateRideSeats(e);
+		sortuMugimendua(e.getTraveler());
 
 		e.setEgoera("deuseztatu");
 		e.setDiruIzoztua(0);
@@ -526,6 +550,32 @@ public class DataAccess  {
 		close();
 	}
 
+	private void sortuMugimendua(Bidaiaria b) {
+		b.addMugimendua("Erreserba deuseztatu da eta dirua itzuli zaizu");
+	}
+
+	private void updateRideSeats(Erreserba e) {
+		Ride r = e.getBidaia();
+		int eserlekuKop = e.getnPlaces();
+		r.updateSeatPlus(eserlekuKop);
+	}
+
+	private void itzuliDirua(Erreserba e) {
+	    Bidaiaria b = e.getTraveler();
+	    float dirua = e.getDiruIzoztua();
+	    b.diruaGehitu(dirua);
+	}
+	
+	
+	// ZUZENDU
+			// e.getTraveler().setDirua(e.getTraveler().getDirua()+e.getBidaia().getPrice()*e.getnPlaces());	
+	// e.getBidaia().setnPlaces(e.getBidaia().getnPlaces()+e.getnPlaces());	
+
+	// Mugimendua m=new Mugimendua("Erreserba deuseztatu da eta dirua itzuli zaizu");
+	// e.getTraveler().addMugimendua(m);
+	// b.addMugimendua(m);
+	// db.persist(m);
+	
 
 	public void erreserbaBaieztatu(int erreserbaZenbaki) {
 		open();
@@ -595,8 +645,7 @@ public class DataAccess  {
 		// ZUZENDU
 		// Bidaiaria b2 = db.find(Bidaiaria.class, b.getEmail());
 		String email = b.getEmail();
-		Bidaiaria b2 = db.find(Bidaiaria.class, email);
-		//
+		Bidaiaria b2 = getBidaiaria(email);
 
 		close();
 		return b2.getErreserbak();
@@ -750,7 +799,7 @@ public class DataAccess  {
 	public List<Erreserba> getBaloratuGabekoErreserbak(Bidaiaria b) {
 		open();		
 		String email = b.getEmail();
-		Bidaiaria b2 = db.find(Bidaiaria.class, email);
+		Bidaiaria b2 = getBidaiaria(email);
 		close();
 		return b2.getBaloratuGabekoErreserbak();
 	}
@@ -783,7 +832,7 @@ public class DataAccess  {
 	public List<Erreklamazioa> erreklamazioaErakutsiBidaiari(Bidaiaria b) {
 		open();
 		String email = b.getEmail();
-		Bidaiaria b2 = db.find(Bidaiaria.class, email);
+		Bidaiaria b2 = getBidaiaria(email);
 		close();
 		return b2.getBidalitakoErreklamazioak();
 	}
@@ -921,6 +970,12 @@ public class DataAccess  {
 		Ride r = db.find(Ride.class, bidaiZenbaki);
 		close();
 		return r;
+	}
+
+	public boolean erregistratu(String izena, String abizena, Date jaiotzeData, String sexua, String erabiltzaileMota,
+			String email, String pasahitza) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
