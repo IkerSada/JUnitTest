@@ -92,131 +92,161 @@ public class EgoeraEzarriMockWhiteTest {
     
   
     @Test
-    public void test_egoeraEzarri_onartu() {
-        
-        // parámetros de la reclamación
+    public void test_egoeraEzarriAdmin_onartu() {
+        // ---------- Preparación de datos ----------
         Erreserba erres = new Erreserba();
-        erres.setDiruIzoztua(100.0f); // dinero bloqueado en la reserva
-        
+        erres.setDiruIzoztua(100.0f);
+
         Bidaiaria b = new Bidaiaria();
         Driver d = new Driver("driverUser", "pass");
-        
-        // saldo inicial (si tu clase tiene este atributo)
+        Admin admin = new Admin("admin@test.com", "pass");
+
         b.setDirua(50.0f);
         d.setDirua(200.0f);
-        
-        // parámetros del método
-        int erreklamazioZenbaki = 1; 
+
+        int erreklamazioZenbaki = 1;
         String egoera = "onartu";
-        
-        try {
-            // crear reclamación con estado inicial correcto
-            Erreklamazioa rr1 = new Erreklamazioa(erres, "deskribapena", b, d);
-            rr1.setErreklamazioZenbaki(erreklamazioZenbaki);
-            rr1.setEgoera("itxaron"); // solo así entra al bloque principal
-            
-            // simular que el find devuelve esta reclamación
-            Mockito.when(db.find(Erreklamazioa.class, erreklamazioZenbaki)).thenReturn(rr1);
-            
-            // ejecutar
-            sut.open();
-            sut.egoeraEzarri(erreklamazioZenbaki, egoera);
-            sut.close();
-            
-            // si llega aquí, todo fue bien
-            assertEquals("onartu", rr1.getEgoera());
-            assertEquals(150.0f, b.getDirua(), 0.001); // 50 + 100
-            assertEquals(100.0f, d.getDirua(), 0.001); // 200 - 100
-            assertTrue(true); // confirma que no ha habido excepciones
-            
-        } catch (erreklamazioaEbatzitaException e) {
-            // si llega aquí, algo fue mal (no debería lanzar)
-            sut.close();
-            fail("No debería lanzarse erreklamazioaEbatzitaException");
-        }
+        String adminEmail = "admin@test.com";
+
+        Erreklamazioa rr1 = new Erreklamazioa(erres, "deskribapena", b, d);
+        rr1.setErreklamazioZenbaki(erreklamazioZenbaki);
+        rr1.setEgoera("itxaron");
+
+        // ---------- Configuración de mocks ----------
+        // Simula que el EntityManager devuelve las instancias deseadas
+        Mockito.when(db.find(Erreklamazioa.class, erreklamazioZenbaki)).thenReturn(rr1);
+        Mockito.when(db.find(Admin.class, adminEmail)).thenReturn(admin);
+
+        // ---------- Ejecución ----------
+        sut.open();
+        sut.egoeraEzarriAdmin(erreklamazioZenbaki, egoera, adminEmail);
+        sut.close();
+
+        // ---------- Verificaciones ----------
+
+        // 1️⃣ Se ha cambiado la situación de la reclamación
+        assertEquals("onartu", rr1.getEgoera());
+
+        // 2️⃣ Efectos sobre los balances
+        assertEquals(150.0f, b.getDirua(), 0.001); // 50 + 100
+        assertEquals(100.0f, d.getDirua(), 0.001); // 200 - 100
+
+        // 3️⃣ Se buscaron los objetos esperados en la base de datos
+        Mockito.verify(db).find(Erreklamazioa.class, erreklamazioZenbaki);
+        Mockito.verify(db).find(Admin.class, adminEmail);
+
+        // 4️⃣ Se controló la transacción correctamente
+        Mockito.verify(db.getTransaction()).begin();
+        Mockito.verify(db.getTransaction()).commit();
+
+        // 5️⃣ Comprobamos que el admin eliminó la reclamación (efecto directo)
+        assertFalse(admin.getJasotakoErreklamazioak().contains(rr1));
+
+        // ✅ Si no lanza excepciones ni fallan los asserts, todo fue bien
     }
 
 
 
     @Test
-    public void test_egoeraEzarri_deuseztatu() {
-        // parámetros de la reclamación
+    public void test_egoeraEzarri_deuseztatu() throws exceptions.erreklamazioaEbatzitaException {
+        // ---------- Preparación ----------
         Erreserba erres = new Erreserba();
         Bidaiaria b = new Bidaiaria();
         Driver d = new Driver("driverUser", "pass");
 
-        // parámetros del método
         int erreklamazioZenbaki = 1; 
         String egoera = "deuseztatu";
-        
-        try {
-            // reclamación inicial
-            Erreklamazioa rr1 = new Erreklamazioa(erres, "deskribapena", b, d);
-            rr1.setErreklamazioZenbaki(erreklamazioZenbaki);
-            rr1.setEgoera("itxaron");
-            
-            // Admin simulado (lista con un admin)
-            Admin admin = new Admin();
-            List<Admin> adminList = new ArrayList<>();
-            adminList.add(admin);
-            
-            // mock del query
-            TypedQuery<Admin> queryMock = Mockito.mock(TypedQuery.class);
-            Mockito.when(queryMock.getResultList()).thenReturn(adminList);
-            Mockito.when(db.createQuery("SELECT a FROM Admin a", Admin.class)).thenReturn(queryMock);
-            
-            // el find devuelve la reclamación
-            Mockito.when(db.find(Erreklamazioa.class, erreklamazioZenbaki)).thenReturn(rr1);
-            
-            // ejecutar
-            sut.open();
-            sut.egoeraEzarri(erreklamazioZenbaki, egoera);
-            sut.close();
-            
-            // verificar
-            assertEquals("deuseztatu", rr1.getEgoera());
-            assertTrue(admin.getJasotakoErreklamazioak().contains(rr1));
-            
-        } catch (erreklamazioaEbatzitaException e) {
-            sut.close();
-            fail("No debería lanzarse erreklamazioaEbatzitaException");
-        }
+
+        Erreklamazioa rr1 = new Erreklamazioa(erres, "deskribapena", b, d);
+        rr1.setErreklamazioZenbaki(erreklamazioZenbaki);
+        rr1.setEgoera("itxaron");
+
+        // Admin simulado
+        Admin admin = new Admin();
+        List<Admin> adminList = new ArrayList<>();
+        adminList.add(admin);
+
+        // ---------- Mocks ----------
+        TypedQuery<Admin> queryMock = Mockito.mock(TypedQuery.class);
+        Mockito.when(queryMock.getResultList()).thenReturn(adminList);
+        Mockito.when(db.createQuery("SELECT a FROM Admin a", Admin.class)).thenReturn(queryMock);
+        Mockito.when(db.find(Erreklamazioa.class, erreklamazioZenbaki)).thenReturn(rr1);
+
+        // ---------- Ejecución ----------
+        sut.open();
+        sut.egoeraEzarri(erreklamazioZenbaki, egoera);
+        sut.close();
+
+        // ---------- Verificaciones ----------
+
+        // 1️⃣ Se cambia la situación correctamente
+        assertEquals("deuseztatu", rr1.getEgoera());
+
+        // 2️⃣ El admin recibe la reclamación
+        assertTrue(admin.getJasotakoErreklamazioak().contains(rr1));
+
+        // 3️⃣ Se busca la reclamación en la BD
+        Mockito.verify(db).find(Erreklamazioa.class, erreklamazioZenbaki);
+
+        // 4️⃣ Se crea la query para obtener los admins
+        Mockito.verify(db).createQuery("SELECT a FROM Admin a", Admin.class);
+
+        // 5️⃣ Se obtiene la lista de admins del query
+        Mockito.verify(queryMock).getResultList();
+
+        // 6️⃣ Control transaccional correcto
+        Mockito.verify(db.getTransaction()).begin();
+        Mockito.verify(db.getTransaction()).commit();
+
+        // ✅ Si llega aquí sin excepciones, todo correcto
     }
 
     
     @Test
     public void test_egoeraEzarri_itxaronEgoeraBerriaEzOnartuEzDeuseztatu() {
-        // parámetros de la reclamación
+        // ---------- Preparación ----------
         Erreserba erresMock = new Erreserba();
         Bidaiaria bMock = new Bidaiaria();
         Driver driverMock = new Driver("driverUser", "pass");
-        
-        // parámetros del método
+
         int erreklamazioZenbaki = 1; 
-        String egoeraBerria = "besteBat"; // Estado diferente a "onartu" o "deuseztatu"
-        
+        String egoeraBerria = "besteBat"; // ni "onartu" ni "deuseztatu"
+
+        // Reclamación inicial
+        Erreklamazioa rr1 = new Erreklamazioa(erresMock, "deskribapena", bMock, driverMock);
+        rr1.setErreklamazioZenbaki(erreklamazioZenbaki);
+        rr1.setEgoera("itxaron"); // estado inicial correcto
+
+        // ---------- Mocks ----------
+        Mockito.when(db.find(Erreklamazioa.class, erreklamazioZenbaki)).thenReturn(rr1);
+
+        // ---------- Ejecución ----------
         try {
-            // crear reclamación con estado inicial "itxaron"
-            Erreklamazioa rr1 = new Erreklamazioa(erresMock, "deskribapena", bMock, driverMock);
-            rr1.setErreklamazioZenbaki(erreklamazioZenbaki);
-            rr1.setEgoera("itxaron"); // Estado inicial correcto para entrar en el if
-            
-            // configure the state through mocks
-            Mockito.when(db.find(Erreklamazioa.class, erreklamazioZenbaki)).thenReturn(rr1);
-            
-            // invoke System Under Test (sut)
             sut.open();
             sut.egoeraEzarri(erreklamazioZenbaki, egoeraBerria);
             sut.close();
-            
-            // verify the results
+
+            // ---------- Verificaciones ----------
+
+            // 1️⃣ Se cambia el estado correctamente
             assertEquals("El estado debería haber cambiado a 'besteBat'", egoeraBerria, rr1.getEgoera());
+
+            // 2️⃣ Se busca la reclamación en la BD
+            Mockito.verify(db).find(Erreklamazioa.class, erreklamazioZenbaki);
+
+            // 3️⃣ Se controla correctamente la transacción
+            Mockito.verify(db.getTransaction()).begin();
+            Mockito.verify(db.getTransaction()).commit();
+
+            // 4️⃣ No debería haberse creado ninguna query adicional ni modificado dinero
+            Mockito.verify(db, Mockito.never()).createQuery(Mockito.anyString(), Mockito.any());
             
         } catch (erreklamazioaEbatzitaException e) {
             sut.close();
             fail("No debería lanzarse erreklamazioaEbatzitaException cuando el estado inicial es 'itxaron'");
         }
     }
+
 
     
     

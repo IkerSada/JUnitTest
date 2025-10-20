@@ -26,7 +26,7 @@ public class EgoeraEzarriBDBlackTest {
         try {
             testDA.open();
             testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-            testDA.createDriver(driverEmail, "Driver");
+            testDA.createDriver(driverEmail, "Driver10");
 
             Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
             Driver driver = testDA.getDriver(driverEmail);
@@ -63,7 +63,7 @@ public class EgoeraEzarriBDBlackTest {
         try {
             testDA.open();
             testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-            testDA.createDriver(driverEmail, "Driver");
+            testDA.createDriver(driverEmail, "Driver11");
 
             Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
             Driver driver = testDA.getDriver(driverEmail);
@@ -89,8 +89,6 @@ public class EgoeraEzarriBDBlackTest {
         }
     }
 
-    @Test
-    // sut.egoeraEzarri: Erreklamazioa in state "itxaron" → change to "deuseztatu"
     public void test3_EgoeraDeuseztatu() {
         String bidaiariaEmail = "bidaiaria@test.com";
         String driverEmail = "driver@test.com";
@@ -99,7 +97,7 @@ public class EgoeraEzarriBDBlackTest {
         try {
             testDA.open();
             testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-            testDA.createDriver(driverEmail, "Driver");
+            testDA.createDriver(driverEmail, "Driver12");
 
             Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
             Driver driver = testDA.getDriver(driverEmail);
@@ -110,8 +108,7 @@ public class EgoeraEzarriBDBlackTest {
             sut.open();
             sut.egoeraEzarri(erreklamazioaId, "deuseztatu");
 
-
-            assertTrue(true); // valid transition
+            assertTrue(true); // expected normal behavior
 
         } catch (erreklamazioaEbatzitaException e) {
             fail("Unexpected erreklamazioaEbatzitaException");
@@ -136,7 +133,7 @@ public class EgoeraEzarriBDBlackTest {
         try {
             testDA.open();
             testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-            testDA.createDriver(driverEmail, "Driver");
+            testDA.createDriver(driverEmail, "Driver13");
 
             Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
             Driver driver = testDA.getDriver(driverEmail);

@@ -45,7 +45,7 @@ public class EgoeraEzarriBDWhiteTest {
 	         
 	         // Crear solo los objetos absolutamente necesarios
 	         testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-	         testDA.createDriver(driverEmail, "Driver");
+	         testDA.createDriver(driverEmail, "Driver1");
 	         
 	         Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
 	         Driver driver = testDA.getDriver(driverEmail);
@@ -88,7 +88,7 @@ public class EgoeraEzarriBDWhiteTest {
 	         
 	         // Crear solo los objetos absolutamente necesarios
 	         testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-	         testDA.createDriver(driverEmail, "Driver");
+	         testDA.createDriver(driverEmail, "Driver2");
 	         
 	         Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
 	         Driver driver = testDA.getDriver(driverEmail);
@@ -150,7 +150,7 @@ public class EgoeraEzarriBDWhiteTest {
 	         
 	         // Crear solo los objetos absolutamente necesarios
 	         testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-	         testDA.createDriver(driverEmail, "Driver");
+	         testDA.createDriver(driverEmail, "Driver3");
 	         
 	         Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
 	         Driver driver = testDA.getDriver(driverEmail);
@@ -206,7 +206,7 @@ public class EgoeraEzarriBDWhiteTest {
 	         
 	         // Crear solo los objetos absolutamente necesarios
 	         testDA.createBidaiaria(bidaiariaEmail, "Bidaiaria", "pass", 100f);
-	         testDA.createDriver(driverEmail, "Driver");
+	         testDA.createDriver(driverEmail, "Driver4");
 	         
 	         Bidaiaria bidaiaria = testDA.getBidaiaria(bidaiariaEmail);
 	         Driver driver = testDA.getDriver(driverEmail);

@@ -111,6 +111,8 @@ public class TestDataAccess {
 	            throw ex;
 	        }
 	    }
+	    
+
 
 	    // Método para obtener Bidaiaria por email
 	    public Bidaiaria getBidaiaria(String email) {
