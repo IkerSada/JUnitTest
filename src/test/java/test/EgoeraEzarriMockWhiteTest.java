@@ -92,7 +92,7 @@ public class EgoeraEzarriMockWhiteTest {
     
   
     @Test
-    public void test_egoeraEzarriAdmin_onartu() {
+    public void test_egoeraEzarri_onartu() {
         // ---------- Preparación de datos ----------
         Erreserba erres = new Erreserba();
         erres.setDiruIzoztua(100.0f);

@@ -167,5 +167,33 @@ public class EgoeraEzarriMockBlackTest {
         }
     }
 
+    
+    
+    
+    
+    @Test
+    public void test_ErreklamazioaNotFound() {
+        int nonExistentId = 999;
+        String egoera = "onartu";
+
+        when(db.find(Erreklamazioa.class, nonExistentId)).thenReturn(null);
+
+        sut.open();
+        assertThrows(Exception.class, () -> sut.egoeraEzarri(nonExistentId, egoera));
+        sut.close();
+    }
+
+    @Test
+    public void test_NullEgoera() {
+        int erreklamazioZenbaki = 1;
+        Erreklamazioa errek = new Erreklamazioa();
+        errek.setEgoera("itxaron");
+
+        when(db.find(Erreklamazioa.class, erreklamazioZenbaki)).thenReturn(errek);
+
+        sut.open();
+        assertThrows(Exception.class, () -> sut.egoeraEzarri(erreklamazioZenbaki, null));
+        sut.close();
+    }
    
 }

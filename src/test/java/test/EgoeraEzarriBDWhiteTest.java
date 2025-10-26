@@ -32,7 +32,31 @@ public class EgoeraEzarriBDWhiteTest {
     
 	 static TestDataAccess testDA=new TestDataAccess();
 
-	 
+	    private String bidaiariaEmail;
+	    private String driverEmail;
+	    private int erreklamazioaId;
+	 @Before
+	    public void setUp() {
+	        // Initialize with unique values to avoid conflicts
+	        bidaiariaEmail = "bidaiaria" + System.currentTimeMillis() + "@test.com";
+	        driverEmail = "driver" + System.currentTimeMillis() + "@test.com";
+	        erreklamazioaId = -1;
+	    }
+
+	    @After
+	    public void tearDown() {
+	        try {
+	            testDA.open();
+	            if (erreklamazioaId != -1) {
+	                testDA.removeErreklamazioa(erreklamazioaId);
+	            }
+	            testDA.removeBidaiaria(bidaiariaEmail);
+	            testDA.removeDriver(driverEmail);
+	            testDA.close();
+	        } catch (Exception e) {
+	            // Cleanup failures shouldn't fail tests
+	        }
+	    }
 
 	 @Test
 	 public void testErreklamazioaEbatzitaException() {

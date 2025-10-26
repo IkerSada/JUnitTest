@@ -89,6 +89,8 @@ public class EgoeraEzarriBDBlackTest {
         }
     }
 
+    
+    @Test
     public void test3_EgoeraDeuseztatu() {
         String bidaiariaEmail = "bidaiaria@test.com";
         String driverEmail = "driver@test.com";
@@ -107,11 +109,14 @@ public class EgoeraEzarriBDBlackTest {
 
             sut.open();
             sut.egoeraEzarri(erreklamazioaId, "deuseztatu");
+            
+            // Verify the state actually changed
+            testDA.open();
+            String newState = testDA.getErreklamazioaEgoera(erreklamazioaId);
+            testDA.close();
+            
+            assertEquals("deuseztatu", newState); // Verify the change
 
-            assertTrue(true); // expected normal behavior
-
-        } catch (erreklamazioaEbatzitaException e) {
-            fail("Unexpected erreklamazioaEbatzitaException");
         } catch (Exception e) {
             fail("Unexpected exception: " + e.getMessage());
         } finally {
@@ -122,6 +127,7 @@ public class EgoeraEzarriBDBlackTest {
             testDA.close();
         }
     }
+   
 
     @Test
     // sut.egoeraEzarri: Erreklamazioa in state "itxaron" → change to an unrecognized state (e.g. "besteBat")
@@ -158,4 +164,25 @@ public class EgoeraEzarriBDBlackTest {
             testDA.close();
         }
     }
+    
+    @Test
+    public void test5_NonExistentErreklamazioa() {
+        try {
+            sut.open();
+            sut.egoeraEzarri(-999, "itxaron"); // Non-existent ID
+            fail("Expected exception for non-existent erreklamazioa");
+        } catch (Exception e) {
+            // Expected behavior
+        } finally {
+            sut.close();
+        }
+    }
+
+    @Test
+    public void test6_NullState() {
+        // Test how the system handles null state parameter
+    }
+    
+    
+    
 }
