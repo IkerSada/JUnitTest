@@ -15,6 +15,7 @@ import java.time.ZoneId;
 //import javax.jws.WebMethod;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
@@ -461,6 +462,10 @@ public class DataAccess  {
 		return reservedRides;
 	}
 
+	
+	
+	
+	/*
 	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
 		open();
 		db.getTransaction().begin();
@@ -476,7 +481,41 @@ public class DataAccess  {
 		//
 		db.getTransaction().commit();
 		close();
+	}*/
+	
+	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
+	    open();
+	    EntityTransaction transaction = db.getTransaction();
+	    transaction.begin();
+	    try {
+	        String email = bidaiari2.getEmail();
+	        Bidaiaria bidaiari = getBidaiaria(email);
+	        if (bidaiari == null) {
+	            throw new RuntimeException("Bidaiaria ez da aurkitu: " + email);
+	        }
+	        
+	        Ride r = db.find(Ride.class, bidaiZenbaki);
+	        if (r == null) {
+	            throw new RuntimeException("Ride ez da aurkitu: " + bidaiZenbaki);
+	        }
+	        
+	        Erreserba e = eguneratuErreserba(bidaiZenbaki, eserlekuKop, bidaiari, r);
+	        eguneratuDiruaEtaMugimendua(eserlekuKop, bidaiari, r, e);
+	        
+	        transaction.commit();
+	    } catch (Exception e) {
+	        if (transaction.isActive()) {
+	            transaction.rollback();
+	        }
+	        throw new RuntimeException("Errorea erreserba egitean: " + e.getMessage(), e);
+	    } finally {
+	        close();
+	    }
 	}
+	
+	
+	
+	
 
 	private Erreserba eguneratuErreserba(int bidaiZenbaki, int eserlekuKop, Bidaiaria bidaiari, Ride r) {
 		Erreserba e = bidaiari.erreserbaBilatu(bidaiZenbaki);
