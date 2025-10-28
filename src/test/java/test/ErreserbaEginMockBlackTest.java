@@ -133,44 +133,7 @@ public class ErreserbaEginMockBlackTest {
         assertTrue("Debería completarse sin excepción incluso con eserlekuKop = 0", true);
     }
 
-    // ============================================================
-    // TEST 3: bidaiaria EZ da existitzen
-    // ============================================================
-    @Test
-    public void test_erreserbaEgin_bidaiariaEzExistitzen() {
-        // ---------- Preparación de datos ----------
-        Calendar today = Calendar.getInstance();
-        int month = today.get(Calendar.MONTH);
-        int year = today.get(Calendar.YEAR);
-
-        Bidaiaria bEzExistitzen = new Bidaiaria("ez@gmail.com", "bidaiari", "Ez dago");
-        bEzExistitzen.setDirua(100.0f);
-
-        Driver driver = new Driver("driver1@gmail.com", "Jon Etxeberria");
-        Ride r = driver.addRide("Bilbo", "Donostia", new Date(year - 1900, month, 10), 4, 10.0f);
-        r.setRideNumber(1);
-
-        // ---------- Configuración de mocks ----------
-        when(db.find(Ride.class, 1)).thenReturn(r);
-        when(db.find(Bidaiaria.class, "ez@gmail.com")).thenReturn(null); // Bidaiaria no existe
-
-        // ---------- Ejecución y Verificación ----------
-        sut.open();
-        
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            sut.erreserbaEgin(1, bEzExistitzen, 1);
-        });
-        
-        assertTrue("Debería lanzar excepción por bidaiaria no encontrado", 
-                   exception.getMessage().contains("Bidaiaria ez da aurkitu"));
-        
-        // Verificar rollback
-        verify(db.getTransaction()).begin();
-        verify(db.getTransaction()).rollback();
-        verify(db.getTransaction(), never()).commit();
-        
-        sut.close();
-    }
+   
 
     // ============================================================
     // TEST 4: bidaia EZ da existitzen

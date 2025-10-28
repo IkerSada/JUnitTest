@@ -465,24 +465,20 @@ public class DataAccess  {
 	
 	
 	
-	/*
+	
 	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
 		open();
 		db.getTransaction().begin();
-		// ZUZENDU
-		// Bidaiaria bidaiari = db.find(Bidaiaria.class,bidaiari2.getEmail());
 		String email = bidaiari2.getEmail();
 		Bidaiaria bidaiari = getBidaiaria(email);
 		Ride r = db.find(Ride.class,bidaiZenbaki);
-		Erreserba e = eguneratuErreserba(bidaiZenbaki, eserlekuKop, bidaiari, r);
-		// ZUZENDU
-		// bidaiari.setDirua(bidaiari.getDirua()-r.getPrice()*eserlekuKop);		
+		Erreserba e = eguneratuErreserba(bidaiZenbaki, eserlekuKop, bidaiari, r);		
 		eguneratuDiruaEtaMugimendua(eserlekuKop, bidaiari, r, e);
-		//
 		db.getTransaction().commit();
 		close();
-	}*/
+	}
 	
+	/*
 	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
 	    open();
 	    EntityTransaction transaction = db.getTransaction();
@@ -512,7 +508,7 @@ public class DataAccess  {
 	        close();
 	    }
 	}
-	
+	*/
 	
 	
 	
@@ -526,10 +522,7 @@ public class DataAccess  {
 			if(e.getEgoera().equals("deuseztatu")) {
 				e.setnPlaces(0);
 			}
-			e.setEgoera("itxaron"); 	
-
-			// ZUZENDU
-			// e.setnPlaces(e.getnPlaces()+eserlekuKop);	
+			e.setEgoera("itxaron"); 		
 			e.updatePlaces(eserlekuKop);
 		}
 		r.updateSeat(eserlekuKop);

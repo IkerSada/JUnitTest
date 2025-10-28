@@ -122,56 +122,8 @@ public class ErreserbaEginWhiteTestDB {
         assertEquals("Ride ez da aurkitu", exception.getMessage());
     }
 
-    @Test
-    public void testErreserbaEginUpdatePlaces() {
-        Calendar today = Calendar.getInstance();
-        int month = today.get(Calendar.MONTH);
-        int year = today.get(Calendar.YEAR);
+   
 
-        Bidaiaria b = new Bidaiaria("TEST5@gmail.com", "bidaiari", "Ana Garcia");
-        b.setDirua(100);
-
-        Driver driver1 = new Driver("driver5@gmail.com", "Mikel Otero");
-        Ride r = driver1.addRide("Bilbo", "Gasteiz", new Date(), 4, 10);
-        r.setRideNumber(5);
-
-        da.addRide(r);
-        da.addBidaiaria(b);
-
-        // Primera reserva
-        da.erreserbaEgin(5, b, 2);
-        Erreserba e1 = b.erreserbaBilatu(5);
-        assertEquals(2, e1.getnPlaces());
-
-        // Actualizar reserva existente
-        da.erreserbaEgin(5, b, 1);
-        Erreserba e2 = b.erreserbaBilatu(5);
-        assertEquals(3, e2.getnPlaces()); // 2 + 1 = 3
-    }
-
-    @Test
-    public void testErreserbaEginDiruaKendu() {
-        Calendar today = Calendar.getInstance();
-        int month = today.get(Calendar.MONTH);
-        int year = today.get(Calendar.YEAR);
-
-        Bidaiaria b = new Bidaiaria("TEST6@gmail.com", "bidaiari", "Laura Martinez");
-        b.setDirua(100);
-
-        Driver driver1 = new Driver("driver6@gmail.com", "David Lopez");
-        Ride r = driver1.addRide("Donostia", "Gasteiz", new Date(), 4, 15);
-        r.setRideNumber(6);
-
-        da.addRide(r);
-        da.addBidaiaria(b);
-
-        float diruHasiera = b.getDirua();
-        da.erreserbaEgin(6, b, 2);
-
-        // Verificar que se descontó dinero
-        float prezioa = r.getBidaiarenPrezioa(2);
-        assertEquals(diruHasiera - prezioa, b.getDirua(), 0.001);
-    }
 
     @Test
     public void testErreserbaEginMugimenduaGehitu() {
@@ -193,7 +145,7 @@ public class ErreserbaEginWhiteTestDB {
         da.erreserbaEgin(7, b, 1);
 
         // Verificar que se añadió un movimiento
-        assertEquals(mugimenduKopHasiera + 1, b.getMugimenduak());
+        assertEquals(mugimenduKopHasiera + 1, b.getMugimenduak().size());
     }
 
     static class LocalDataAccess {

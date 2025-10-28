@@ -4,6 +4,7 @@ package test;
 import domain.Bidaiaria;
 import domain.Driver;
 import domain.Erreserba;
+import testOperations.TestDataAccess;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -16,9 +17,13 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import dataAccess.DataAccess;
+
 import java.util.*;
 
 // Bidaiaren klasea test lokaletarako
@@ -30,6 +35,8 @@ class Ride {
 	private int price;
 	private String egoera;
 
+
+	
 	public Ride(String driver, String from, String to, int nPlaces, int price, String egoera) {
 		this.driver = driver;
 		this.from = from;
@@ -48,6 +55,8 @@ public class ErreserbaEginBlackTestDB {
 	private Map<Integer, Ride> bidaiak;
 	private Set<String> erabiltzaileak;
 
+    static DataAccess sut = new DataAccess();
+    static TestDataAccess testDA = new TestDataAccess();
 	@Before
 	public void setUp() {
 		bidaiak = new HashMap<>();
@@ -103,4 +112,23 @@ public class ErreserbaEginBlackTestDB {
 		assertTrue(r.getnPlaces() > 0); // lekuak 1
 		assertFalse(isUserExists("Miren"));
 	}
+	
+    @Test
+    public void test6_NullState() {
+        // Test how the system handles null state parameter
+    }
+    
+    @Test
+    public void test5_NonExistentErreklamazioa() {
+        try {
+            sut.open();
+            sut.egoeraEzarri(-999, "itxaron"); // Non-existent ID
+            fail("Expected exception for non-existent erreklamazioa");
+        } catch (Exception e) {
+            // Expected behavior
+        } finally {
+            sut.close();
+        }
+    }
+    
 }
