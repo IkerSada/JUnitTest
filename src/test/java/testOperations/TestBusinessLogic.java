@@ -27,17 +27,17 @@ public class TestBusinessLogic {
 
 		}
 		
-		public Driver createDriver(String email, String name) {
+		public Driver createDriver(String email, String pass, String user ) {
 			dbManagerTest.open();
-			Driver driver=dbManagerTest.createDriver(email, name);
+			Driver driver=dbManagerTest.createDriver(email, pass, user);
 			dbManagerTest.close();
 			return driver;
 
 		}
 		
-		public boolean existDriver(String email) {
+		public Driver existDriver(String email) {
 			dbManagerTest.open();
-			boolean existDriver=dbManagerTest.existDriver(email);
+			Driver existDriver=dbManagerTest.existDriver(email);
 			dbManagerTest.close();
 			return existDriver;
 
