@@ -22,226 +22,124 @@ import domain.Driver;
 import domain.Erreserba;
 import domain.Ride;
 
-import java.util.Calendar;
-import java.util.Date;
-
 public class ErreserbaEginMockWhiteTest {
-    
-    static DataAccess sut;
-    
-    protected MockedStatic<Persistence> persistenceMock;
 
-    @Mock
-    protected EntityManagerFactory entityManagerFactory;
-    @Mock
-    protected EntityManager db;
-    @Mock
-    protected EntityTransaction et;
-    
+	static DataAccess sut;
 
-    @Before
-    public void init() {
-        MockitoAnnotations.openMocks(this);
-        persistenceMock = Mockito.mockStatic(Persistence.class);
-        persistenceMock.when(() -> Persistence.createEntityManagerFactory(Mockito.any()))
-            .thenReturn(entityManagerFactory);
-        
-        Mockito.doReturn(db).when(entityManagerFactory).createEntityManager();
-        Mockito.doReturn(et).when(db).getTransaction();
-        sut = new DataAccess(db);
-    }
-    
-    @After
-    public void tearDown() {
-        persistenceMock.close();
-    }
+	protected MockedStatic<Persistence> persistenceMock;
 
-    @Test
-    public void testErreserbaEginErreserbaBerria() {
-        // ---------- Preparación de datos ----------
-        Calendar today = Calendar.getInstance();
-        int month = today.get(Calendar.MONTH);
-        int year = today.get(Calendar.YEAR);
+	@Mock
+	protected EntityManagerFactory entityManagerFactory;
+	@Mock
+	protected EntityManager db;
+	@Mock
+	protected EntityTransaction et;
 
-        Bidaiaria b = new Bidaiaria("TEST@gmail.com", "bidaiari", "Magdalena Sevillano");
-        b.setDirua(100.0f);
+	@Before
+	public void init() {
+		MockitoAnnotations.openMocks(this);
+		persistenceMock = Mockito.mockStatic(Persistence.class);
+		persistenceMock.when(() -> Persistence.createEntityManagerFactory(Mockito.any()))
+		.thenReturn(entityManagerFactory);
 
-        Driver driver1 = new Driver("driver1@gmail.com", "Aitor Fernandez");
-        Ride r = driver1.addRide("Bilbo", "Donostia", new Date(year-1900, month, 15), 4, 7.0f);
-        r.setRideNumber(1);
+		when(entityManagerFactory.createEntityManager()).thenReturn(db);
+		when(db.getTransaction()).thenReturn(et);
 
-        // ---------- Configuración de mocks ----------
-        Mockito.when(db.find(Ride.class, 1)).thenReturn(r);
-        Mockito.when(db.find(Bidaiaria.class, "TEST@gmail.com")).thenReturn(b);
+		sut = new DataAccess(db);
+	}
 
-        // ---------- Ejecución ----------
-        sut.open();
-        sut.erreserbaEgin(1, b, 1);
-        sut.close();
+	@After
+	public void tearDown() {
+		persistenceMock.close();
+	}
+	
+	//erreseba berria sortu
+	@Test
+	public void testErreserbaEgin_ErreserbaBerria() {
+		int bidaiZenbaki = 1;
+		int eserlekuKop = 2;
 
-        // ---------- Verificaciones ----------
-        
-        // 1️⃣ Se buscaron los objetos en la base de datos
-        Mockito.verify(db).find(Ride.class, 1);
-        Mockito.verify(db).find(Bidaiaria.class, "TEST@gmail.com");
-        
-        // 2️⃣ Se controló la transacción correctamente
-        Mockito.verify(db.getTransaction()).begin();
-        Mockito.verify(db.getTransaction()).commit();
-        
-        // 3️⃣ La reserva se creó correctamente (verificar a través del comportamiento)
-        // Como no podemos acceder directamente a la reserva creada, verificamos que
-        // se ejecutó la lógica de transacción sin errores
-        assertTrue("La ejecución debería completarse sin excepciones", true);
-    }
+		Driver driver = new Driver("driver1", "pass");
+		Ride ride = new Ride("Bilbo", "Donostia", null, 4, 15, driver);
+		ride.setRideNumber(bidaiZenbaki);
 
-    @Test
-    public void testErreserbaDeuseztatua() {
-        // ---------- Preparación de datos ----------
-        Calendar today = Calendar.getInstance();
-        int month = today.get(Calendar.MONTH);
-        int year = today.get(Calendar.YEAR);
+		Bidaiaria bidaiaria = new Bidaiaria("test@ehu.eus", "pass", "B1");
+		bidaiaria.setDirua(100);
 
-        Bidaiaria b = new Bidaiaria("TEST2@gmail.com", "bidaiari", "Maria Perez");
-        b.setDirua(100.0f);
+		when(db.find(Ride.class, bidaiZenbaki)).thenReturn(ride);
+		when(db.find(Bidaiaria.class, bidaiaria.getEmail())).thenReturn(bidaiaria);
 
-        Driver driver1 = new Driver("driver2@gmail.com", "Jon Martinez");
-        Ride r = driver1.addRide("Gasteiz", "Bilbo", new Date(year-1900, month, 20), 4, 7.0f);
-        r.setRideNumber(2);
+		Erreserba e = bidaiaria.erreserbaBilatu(bidaiZenbaki);
+		assertNull(e);
 
-        // Crear reserva previa con estado "deuseztatu"
-        Erreserba eAurrez = b.addErreserba(r, 2);
-        eAurrez.setEgoera("deuseztatu");
+		sut.erreserbaEgin(bidaiZenbaki, bidaiaria, eserlekuKop);
 
-        // ---------- Configuración de mocks ----------
-        Mockito.when(db.find(Ride.class, 2)).thenReturn(r);
-        Mockito.when(db.find(Bidaiaria.class, "TEST2@gmail.com")).thenReturn(b);
+		e = bidaiaria.erreserbaBilatu(bidaiZenbaki);
+		assertNotNull(e);
+		assertEquals("itxaron", e.getEgoera());
+		assertEquals(eserlekuKop, e.getnPlaces());
 
-        // ---------- Ejecución ----------
-        sut.open();
-        sut.erreserbaEgin(2, b, 1);
-        sut.close();
+		float prezioa = ride.getBidaiarenPrezioa(eserlekuKop);
+		assertEquals(100 - prezioa, bidaiaria.getDirua(), 0.001);
+		assertEquals(prezioa, e.getDiruIzoztua(), 0.001);
+	}
 
-        // ---------- Verificaciones ----------
-        
-        // 1️⃣ Se buscaron los objetos en la base de datos
-        Mockito.verify(db).find(Ride.class, 2);
-        Mockito.verify(db).find(Bidaiaria.class, "TEST2@gmail.com");
-        
-        // 2️⃣ Se controló la transacción correctamente
-        Mockito.verify(db.getTransaction()).begin();
-        Mockito.verify(db.getTransaction()).commit();
-        
-        // 3️⃣ La reserva debería reactivarse (esto se verificaría en la lógica interna)
-        assertTrue("La ejecución debería completarse sin excepciones para reserva deshecha", true);
-    }
+	
+	//bilatu dagoeneko deuseztatuta dagoen erreseba eta eguneratu
+	@Test
+	public void testErreserbaEgin_deuseztatutakoErresebaEguneratu() {
+		int bidaiZenbaki = 2;
+		int eserlekuKop = 1;
 
-    @Test
-    public void testErreserbaExistitzenEgoeraEzDeuseztatu() {
-        // ---------- Preparación de datos ----------
-        Calendar today = Calendar.getInstance();
-        int month = today.get(Calendar.MONTH);
-        int year = today.get(Calendar.YEAR);
+		Driver driver = new Driver("driver2", "pass");
+		Ride ride = new Ride("Bilbo", "Donostia", null, 4, 15, driver);
+		ride.setRideNumber(bidaiZenbaki);
 
-        Bidaiaria b = new Bidaiaria("TEST3@gmail.com", "bidaiari", "Jon Lopez");
-        b.setDirua(100.0f);
+		Bidaiaria bidaiaria = new Bidaiaria("b2@ehu.eus", "pass", "B2");
+		bidaiaria.setDirua(100);
+		
+	    Erreserba aktiboa = bidaiaria.addErreserba(ride, 0);
+	    aktiboa.setEgoera("deuseztatu");
+	    
+		when(db.find(Ride.class, bidaiZenbaki)).thenReturn(ride);
+		when(db.find(Bidaiaria.class, bidaiaria.getEmail())).thenReturn(bidaiaria);
+		
 
-        Driver driver1 = new Driver("driver3@gmail.com", "Laura Garcia");
-        Ride r = driver1.addRide("Donostia", "Bilbo", new Date(year-1900, month, 25), 4, 7.0f);
-        r.setRideNumber(3);
+		sut.erreserbaEgin(bidaiZenbaki, bidaiaria, eserlekuKop);
 
-        // Crear reserva previa con estado "itxaron"
-        Erreserba eAurrez = b.addErreserba(r, 1);
-        eAurrez.setEgoera("itxaron");
+		Erreserba e = bidaiaria.erreserbaBilatu(bidaiZenbaki);
+		assertNotNull("Erreserba existitu behar da", e);
+		assertEquals("Egoera 'itxaron' eguneratu behar da", "itxaron", e.getEgoera());
+		assertEquals("Eserleku kopurua eguneratu behar da", eserlekuKop, e.getnPlaces());
+		assertSame("Erreserba berbera eguneratu behar da", aktiboa, e);
+	}
+	
+	//bilatu dagoeneko erreseba eta eguneratu
+	@Test
+	public void testErreserbaEgin_ErresebaEguneratu() {
+	    int bidaiZenbaki = 3;
+	    int eserlekuKop = 2;
 
-        // ---------- Configuración de mocks ----------
-        Mockito.when(db.find(Ride.class, 3)).thenReturn(r);
-        Mockito.when(db.find(Bidaiaria.class, "TEST3@gmail.com")).thenReturn(b);
+	    Driver driver = new Driver("driver3", "pass");
+	    Ride ride = new Ride("Bilbo", "Gasteiz", null, 4, 12, driver);
+	    ride.setRideNumber(bidaiZenbaki);
 
-        // ---------- Ejecución ----------
-        sut.open();
-        sut.erreserbaEgin(3, b, 1);
-        sut.close();
+	    Bidaiaria bidaiaria = new Bidaiaria("b3@ehu.eus", "pass", "B3");
+	    bidaiaria.setDirua(100);
+	    
+	    // Aurretik zegoen erreserba: 0 eserlekurekin (berria balitz bezala)
+	    Erreserba aktiboa = bidaiaria.addErreserba(ride, 0);
+	    aktiboa.setEgoera("itxaron");
+	    
+	    when(db.find(Bidaiaria.class, bidaiaria.getEmail())).thenReturn(bidaiaria);
+	    when(db.find(Ride.class, bidaiZenbaki)).thenReturn(ride);
 
-        // ---------- Verificaciones ----------
-        
-        // 1️⃣ Se buscaron los objetos en la base de datos
-        Mockito.verify(db).find(Ride.class, 3);
-        Mockito.verify(db).find(Bidaiaria.class, "TEST3@gmail.com");
-        
-        // 2️⃣ Se controló la transacción correctamente
-        Mockito.verify(db.getTransaction()).begin();
-        Mockito.verify(db.getTransaction()).commit();
-        
-        // 3️⃣ La reserva existente debería actualizarse (más plazas)
-        assertTrue("La ejecución debería completarse sin excepciones para reserva existente", true);
-    }
-
-    @Test
-    public void testErreserbaEginRideNotFound() {
-        // ---------- Preparación de datos ----------
-        Bidaiaria b = new Bidaiaria("TEST4@gmail.com", "bidaiari", "Pedro Sanchez");
-        b.setDirua(100.0f);
-
-        // ---------- Configuración de mocks ----------
-        Mockito.when(db.find(Ride.class, 999)).thenReturn(null); // Ride no existe
-        Mockito.when(db.find(Bidaiaria.class, "TEST4@gmail.com")).thenReturn(b);
-        
-        // CONFIGURAR EL COMPORTAMIENTO DE isActive() PARA QUE DEVUELVA true
-        Mockito.when(et.isActive()).thenReturn(true);
-
-        // ---------- Ejecución y Verificación ----------
-        sut.open();
-        
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            sut.erreserbaEgin(999, b, 1);
-        });
-        
-        assertTrue("Debería lanzar excepción por ride no encontrado", 
-                   exception.getMessage().contains("Ride ez da aurkitu"));
-        
-        // Verificar que se hizo begin y rollback
-        Mockito.verify(db.getTransaction()).begin();
-        Mockito.verify(et).isActive(); // Verificar que se llamó a isActive()
-        Mockito.verify(db.getTransaction()).rollback();
-        Mockito.verify(db.getTransaction(), never()).commit();
-        
-        sut.close();
-    }
-
-    @Test
-    public void testErreserbaEginBidaiariaNotFound() {
-        // ---------- Preparación de datos ----------
-        Bidaiaria b = new Bidaiaria("TEST5@gmail.com", "bidaiari", "Ana Garcia");
-        b.setDirua(100.0f);
-
-        Driver driver1 = new Driver("driver5@gmail.com", "Mikel Otero");
-        Ride r = driver1.addRide("Bilbo", "Gasteiz", new Date(), 4, 7.0f);
-        r.setRideNumber(5);
-
-        // ---------- Configuración de mocks ----------
-        Mockito.when(db.find(Ride.class, 5)).thenReturn(r);
-        Mockito.when(db.find(Bidaiaria.class, "TEST5@gmail.com")).thenReturn(null); // Bidaiaria no existe
-        
-        // CONFIGURAR EL COMPORTAMIENTO DE isActive() PARA QUE DEVUELVA true
-        Mockito.when(et.isActive()).thenReturn(true);
-
-        // ---------- Ejecución y Verificación ----------
-        sut.open();
-        
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            sut.erreserbaEgin(5, b, 1);
-        });
-        
-        assertTrue("Debería lanzar excepción por bidaiaria no encontrado", 
-                   exception.getMessage().contains("Bidaiaria ez da aurkitu"));
-        
-        // Verificar que se hizo begin y rollback
-        Mockito.verify(db.getTransaction()).begin();
-        Mockito.verify(et).isActive(); // Verificar que se llamó a isActive()
-        Mockito.verify(db.getTransaction()).rollback();
-        Mockito.verify(db.getTransaction(), never()).commit();
-        
-        sut.close();
-    }
+	    sut.erreserbaEgin(bidaiZenbaki, bidaiaria, eserlekuKop);
+	    
+	    Erreserba e = bidaiaria.erreserbaBilatu(bidaiZenbaki);
+	    assertNotNull("Erreserba existitu behar da", e);
+	    assertEquals("Egoera 'itxaron' eguneratu behar da", "itxaron", e.getEgoera());
+	    assertEquals("Eserleku kopurua eguneratu behar da", eserlekuKop, e.getnPlaces());
+	    assertSame("Erreserba berbera eguneratu behar da", aktiboa, e);
+	}
 }

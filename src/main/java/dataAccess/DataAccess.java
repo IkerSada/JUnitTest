@@ -463,9 +463,37 @@ public class DataAccess  {
 	}
 
 	
+	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
+		open();
+		String email = bidaiari2.getEmail();
+		
+		Bidaiaria bidaiari = db.find(Bidaiaria.class,email);
+		Ride r = db.find(Ride.class,bidaiZenbaki);
+		Erreserba e = bidaiari.erreserbaBilatu(bidaiZenbaki);
+		db.getTransaction().begin();
+		if(e==null) {
+			e = bidaiari.addErreserba(r,eserlekuKop);
+		} else {
+			if(e.getEgoera().equals("deuseztatu")) {
+				e.setnPlaces(0);
+			}
+			e.setEgoera("itxaron"); 	
+
+			e.updatePlaces(eserlekuKop);
+
+		}
+		r.updateSeat(eserlekuKop);
+
+		float prezioa = r.getBidaiarenPrezioa(eserlekuKop);
+		bidaiari.diruaKendu(prezioa);
+					
+		e.eguneratuDiruIzoztua(prezioa);	
+		bidaiari.addMugimendua("Diruzorrotik erreserbaren prezioa kobratu da (diru hori izoztuta)");
+		db.getTransaction().commit();
+		close();
+	}
 	
-	
-	
+	/*
 	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
 		open();
 		db.getTransaction().begin();
@@ -478,7 +506,7 @@ public class DataAccess  {
 		close();
 	}
 	
-	/*
+	
 	public void erreserbaEgin(int bidaiZenbaki, Bidaiaria bidaiari2, int eserlekuKop) {		
 	    open();
 	    EntityTransaction transaction = db.getTransaction();
