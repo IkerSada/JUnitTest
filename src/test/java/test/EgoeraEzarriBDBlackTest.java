@@ -148,7 +148,7 @@ public class EgoeraEzarriBDBlackTest {
 
     // Test 3: ID negatiboa - HUTSI BEHAR DU (gorria) - NullPointerException
     @Test
-    public void testEgoeraIdNegatiboa() {
+    public void testIdNegatiboarekin() {
         try {
             egoera = "onartu";
             errekzbk = -1;
@@ -162,7 +162,7 @@ public class EgoeraEzarriBDBlackTest {
             
         } catch (NullPointerException e) {
             // ZUZENA - metodoak ez du kudeatzen ID negatiborik
-            assertTrue("Metodoak ez du kudeatzen ID negatiborik - NullPointerException", true);
+            fail("Metodoak ez du kudeatzen ID negatiborik - NullPointerException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }
@@ -170,7 +170,7 @@ public class EgoeraEzarriBDBlackTest {
 
     // Test 4: ID existitzen ez dena - HUTSI BEHAR DU (gorria) - NullPointerException
     @Test
-    public void testEgoeraIdExistitzenEzDena() {
+    public void testIdExistitzenEzDena() {
         try {
             egoera = "onartu";
             errekzbk = 999999; // Existitzen ez den IDa
@@ -184,7 +184,7 @@ public class EgoeraEzarriBDBlackTest {
             
         } catch (NullPointerException e) {
             // ZUZENA - metodoak ez du kudeatzen ID existitzen ez denik
-            assertTrue("Metodoak ez du kudeatzen ID existitzen ez denik - NullPointerException", true);
+            fail("Metodoak ez du kudeatzen ID existitzen ez denik - NullPointerException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }
@@ -192,7 +192,7 @@ public class EgoeraEzarriBDBlackTest {
 
     // Test 5: Egoera null - HUTSI BEHAR DU (gorria) - NullPointerException
     @Test
-    public void testEgoeraEgoeraNull() {
+    public void testEgoeraNulua() {
         try {
             // Datuak prestatu
             bidaiaria = addBidaiaria("testBidaiaria@email.com", "Test Bidaiaria");
@@ -212,7 +212,7 @@ public class EgoeraEzarriBDBlackTest {
             
         } catch (NullPointerException e) {
             // ZUZENA - metodoak ez du kudeatzen egoera nulurik
-            assertTrue("Metodoak ez du kudeatzen egoera nulurik - NullPointerException", true);
+            fail("Metodoak ez du kudeatzen egoera nulurik - NullPointerException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }
@@ -278,7 +278,7 @@ public class EgoeraEzarriBDBlackTest {
 
     // Test 8: Erreklamazioa ebatzia dagoenean - ZUZENA (berdea) salbuespena jaurtitzen duelako
     @Test
-    public void testEgoeraErreklamazioaEbatzia() {
+    public void testErreklamazioaEbatziaDagoenean() {
         try {
             // Datuak prestatu
             bidaiaria = addBidaiaria("testBidaiaria@email.com", "Test Bidaiaria");
@@ -307,7 +307,7 @@ public class EgoeraEzarriBDBlackTest {
 
     // Test 9: Administratzaile zerrenda hutsa - HUTSI BEHAR DU (gorria) - IndexOutOfBoundsException
     @Test
-    public void testEgoeraAdminZerrendaHutsa() {
+    public void testAdministratzaileZerrendaHutsa() {
         try {
             // Datuak prestatu (administratzailerik gabe)
             bidaiaria = addBidaiaria("testBidaiaria@email.com", "Test Bidaiaria");
@@ -330,7 +330,7 @@ public class EgoeraEzarriBDBlackTest {
             
         } catch (IndexOutOfBoundsException e) {
             // ZUZENA - metodoak ez du kudeatzen zerrenda hutsarik
-            assertTrue("Metodoak ez du kudeatzen administratzaile zerrenda hutsarik - IndexOutOfBoundsException", true);
+            fail("Metodoak ez du kudeatzen administratzaile zerrenda hutsarik - IndexOutOfBoundsException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }
@@ -373,7 +373,7 @@ public class EgoeraEzarriBDBlackTest {
 
     // Test 11: Erreklamazioa "itxaron" egoeran ez dagoenean - ZUZENA (berdea) salbuespena jaurtitzen duelako
     @Test
-    public void testEgoeraEzItxaronEgoeran() {
+    public void testErreklamazioaEzItxaronEgoeran() {
         try {
             // Datuak prestatu
             bidaiaria = addBidaiaria("testBidaiaria@email.com", "Test Bidaiaria");

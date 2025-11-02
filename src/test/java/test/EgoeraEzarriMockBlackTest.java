@@ -162,7 +162,7 @@ public class EgoeraEzarriMockBlackTest {
             
         } catch (NullPointerException e) {
             // ZUZENA - metodoak ez du kudeatzen ID negatiborik
-            assertTrue("Metodoak ez du kudeatzen ID negatiborik - NullPointerException", true);
+            fail("Metodoak ez du kudeatzen ID negatiborik - NullPointerException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }
@@ -184,7 +184,7 @@ public class EgoeraEzarriMockBlackTest {
             
         } catch (NullPointerException e) {
             // ZUZENA - metodoak ez du kudeatzen ID existitzen ez denik
-            assertTrue("Metodoak ez du kudeatzen ID existitzen ez denik - NullPointerException", true);
+            fail("Metodoak ez du kudeatzen ID existitzen ez denik - NullPointerException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }
@@ -212,7 +212,7 @@ public class EgoeraEzarriMockBlackTest {
             
         } catch (NullPointerException e) {
             // ZUZENA - metodoak ez du kudeatzen egoera nulurik
-            assertTrue("Metodoak ez du kudeatzen egoera nulurik - NullPointerException", true);
+            fail("Metodoak ez du kudeatzen egoera nulurik - NullPointerException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }
@@ -330,7 +330,7 @@ public class EgoeraEzarriMockBlackTest {
             
         } catch (IndexOutOfBoundsException e) {
             // ZUZENA - metodoak ez du kudeatzen zerrenda hutsarik
-            assertTrue("Metodoak ez du kudeatzen administratzaile zerrenda hutsarik - IndexOutOfBoundsException", true);
+            fail("Metodoak ez du kudeatzen administratzaile zerrenda hutsarik - IndexOutOfBoundsException");
         } catch (Exception e) {
             fail("Salbuespen okerra: " + e.getClass().getSimpleName());
         }

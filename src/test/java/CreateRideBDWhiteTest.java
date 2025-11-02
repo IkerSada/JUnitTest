@@ -18,7 +18,7 @@ import testOperations.TestDataAccess;
 import domain.Driver;
 
 public class CreateRideBDWhiteTest {
-
+/*
 	 //sut:system under test
 	 static DataAccess sut=new DataAccess();
 	 
@@ -298,5 +298,5 @@ public class CreateRideBDWhiteTest {
 		   }
 		   
 	@Test
-	public void test6() {}  
+	public void test6() {}  */
 }

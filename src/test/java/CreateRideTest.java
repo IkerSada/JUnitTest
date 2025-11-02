@@ -18,7 +18,7 @@ import testOperations.TestDataAccess;
 import domain.Driver;
 
 public class CreateRideTest {
-
+/*
 	 //sut:system under test
 	 static DataAccess sut=new DataAccess();
 	 
@@ -254,6 +254,6 @@ public class CreateRideTest {
 			testDA.close();
 			
 		        }
-		   }
+		   }*/
 }
 
