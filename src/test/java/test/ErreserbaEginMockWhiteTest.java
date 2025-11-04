@@ -58,10 +58,20 @@ public class ErreserbaEginMockWhiteTest {
 	public void testErreserbaEgin_ErreserbaBerria() {
 		int bidaiZenbaki = 1;
 		int eserlekuKop = 2;
-
+		
+		if(bidaiZenbaki<2) {
+			System.out.println("estaldura jaisteko proba");
+		}
+		else {
+			System.out.println("esaldi hau ez da inoiz pantailaratuko");
+			System.out.println("esaldi hau ez da inoiz pantailaratuko");
+			System.out.println("esaldi hau ez da inoiz pantailaratuko");
+			Driver driver2 = new Driver("driver2", "pass2");
+		}
 		Driver driver = new Driver("driver1", "pass");
 		Ride ride = new Ride("Bilbo", "Donostia", null, 4, 15, driver);
 		ride.setRideNumber(bidaiZenbaki);
+		
 
 		Bidaiaria bidaiaria = new Bidaiaria("test@ehu.eus", "pass", "B1");
 		bidaiaria.setDirua(100);
