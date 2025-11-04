@@ -50,8 +50,8 @@
 
 		<sonar.organization>IkerSada</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.projectKey>ikersada2_continuousintegration</sonar.projectKey>
-		<sonar.login>b7ed6aa312d484990e8034fb6f59a80defdad049</sonar.login>
+		<sonar.projectKey>ikersada_junittest</sonar.projectKey>
+		<sonar.login>398920e138176a9572197d60bef031347f45ce7b</sonar.login>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
