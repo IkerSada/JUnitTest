@@ -29,7 +29,7 @@ public class TestDataAccess {
 
 	ConfigXML  c=ConfigXML.getInstance();
 
-
+//prueba 3
 	public TestDataAccess()  {
 		
 		System.out.println("TestDataAccess created");
