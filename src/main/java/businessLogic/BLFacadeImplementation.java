@@ -22,7 +22,6 @@ import domain.Mugimendua;
 import exceptions.RideMustBeLaterThanTodayException;
 import exceptions.erreklamazioaEbatzitaException;
 import exceptions.AlertaAlreadyExistException;
-import exceptions.KotxeaAlreadyExistException;
 import exceptions.RideAlreadyExistException;
 
 /**

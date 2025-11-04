@@ -48,10 +48,10 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 
-		<sonar.organization>IkerSada</sonar.organization>
+		<sonar.organization>ikersada</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.projectKey>ikersada_junittest</sonar.projectKey>
-		<sonar.login>398920e138176a9572197d60bef031347f45ce7b</sonar.login>
+		<sonar.login>b287199071236557868f4d399a28b5e5db9a7bef</sonar.login>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
