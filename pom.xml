@@ -51,7 +51,7 @@
 		<sonar.organization>ikersada</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.projectKey>ikersada_junittest</sonar.projectKey>
-		<sonar.login>b287199071236557868f4d399a28b5e5db9a7bef</sonar.login>
+		<sonar.login>e9912f3f23a8ce45df2cd3591e4cc97817cbfb38</sonar.login>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
