@@ -956,6 +956,7 @@ public class DataAccess  {
 
 	// GEHITU
 	public void egoeraEzarri(int errekzbk, String egoera) throws erreklamazioaEbatzitaException { 
+		/*
 		open();
 	
 		db.getTransaction().begin();
@@ -981,7 +982,7 @@ public class DataAccess  {
 			throw new erreklamazioaEbatzitaException();
 		}
 		db.getTransaction().commit();
-		close();
+		close();*/
 	}
 
 	// GEHITU 
