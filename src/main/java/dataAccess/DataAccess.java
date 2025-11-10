@@ -42,6 +42,8 @@ import exceptions.erreklamazioaEbatzitaException;
 /**
  * It implements the data access to the objectDb database
  */
+
+//probando que no se haya roto solo
 public class DataAccess  {
 	private  EntityManager  db;
 	private  EntityManagerFactory emf;
