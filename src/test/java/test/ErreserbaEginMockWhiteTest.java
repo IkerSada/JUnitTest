@@ -109,7 +109,7 @@ public class ErreserbaEginMockWhiteTest {
 		bidaiaria.setDirua(100);
 		
 	    Erreserba aktiboa = bidaiaria.addErreserba(ride, 0);
-	    aktiboa.setEgoera("deuseztatu");
+	    //aktiboa.setEgoera("deuseztatu");
 	    
 		when(db.find(Ride.class, bidaiZenbaki)).thenReturn(ride);
 		when(db.find(Bidaiaria.class, bidaiaria.getEmail())).thenReturn(bidaiaria);

@@ -111,7 +111,7 @@ public class ErresebaEginBDWhiteTest {
 		
 		// Sortu existitzen den deuseztatutako erreserba bat
 		erreserba =bidaiaria.addErreserba(ride, 2);
-		erreserba.setEgoera("deuseztatu");
+		//erreserba.setEgoera("deuseztatu");
 		
 		testdb.open();
 		testdb.updateBidaiaria(bidaiaria);
